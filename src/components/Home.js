@@ -6,6 +6,7 @@ export default function Home(){
             <section>
                 <h1> Bærekraftsmotor</h1>
                 <h2> Piotr Marek Kramer </h2>
+                <h3>Øyvind</h3>
             </section>
         </main>
         )
