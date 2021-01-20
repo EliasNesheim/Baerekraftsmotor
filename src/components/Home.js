@@ -10,6 +10,11 @@ export default function Home(){
                     <Col><h1> Bærekraftsmotor</h1></Col>
                     <Col><Button>Bootstrap Test knapp</Button></Col>
                 </Row>
+                <row>
+                  <h1> Bærekraftsmotor</h1>
+                  <h2> Piotr Marek Kramer </h2>
+                  <h3>Øyvind</h3>
+                </row>
             </Container>
         </main>
         )
