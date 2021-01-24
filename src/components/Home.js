@@ -15,7 +15,9 @@ export default function Home(){
                   <h2> Piotr Marek Kramer </h2>
                     <h3>Øyvind</h3>
                     <button>Add some text</button>
-                    <input type="text"/> 
+                    <input type="text" /> 
+                    <button>Add some text</button>
+                    <input type="text" /> 
             
                 </row>
             </Container>
