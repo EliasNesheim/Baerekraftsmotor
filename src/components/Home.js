@@ -13,7 +13,10 @@ export default function Home(){
                 <row>
                   <h1> Bærekraftsmotor</h1>
                   <h2> Piotr Marek Kramer </h2>
-                  <h3>Øyvind</h3>
+                    <h3>Øyvind</h3>
+                    <button>Add some text</button>
+                    <input type="text"/> 
+            
                 </row>
             </Container>
         </main>
