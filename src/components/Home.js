@@ -1,15 +1,11 @@
-<<<<<<< Updated upstream
-import React from "react";
+import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Row, Col } from "react-bootstrap";
-=======
-import React, { useState, useEffect } from "react";
 const axios = require('axios');
 
 let print = "";
 
 
->>>>>>> Stashed changes
 
 export default function Home(){
     const [postData, setPost] = useState(null);
@@ -32,19 +28,6 @@ export default function Home(){
 
     return(
         <main>
-<<<<<<< Updated upstream
-            <Container>
-                <Row>
-                    <Col><h1> Bærekraftsmotor</h1></Col>
-                    <Col><Button>Bootstrap Test knapp</Button></Col>
-                </Row>
-                <row>
-                  <h1> Bærekraftsmotor</h1>
-                  <h2> Piotr Marek Kramer </h2>
-                  <h3>Øyvind</h3>
-                </row>
-            </Container>
-=======
             <section>
                 <h1> Bærekraftsmotor</h1>
                 <h2> Piotr Marek Kramer </h2>
@@ -54,7 +37,6 @@ export default function Home(){
                     <h2>{postData}</h2>
                 </section>
             </section>
->>>>>>> Stashed changes
         </main>
         )
 }
