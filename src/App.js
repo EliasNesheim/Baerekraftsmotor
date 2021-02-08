@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-import React from 'react';
-=======
 import React, { useState, useEffect } from "react";
->>>>>>> Stashed changes
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home";
@@ -20,22 +16,13 @@ function App() {
 
   return (
   <div className="App">
-    <Navbar />
-    
-    
     <BrowserRouter>
-<<<<<<< Updated upstream
-      <Switch>
-        <Route component={Home} path = '/' exact />
-      </Switch>
-      </BrowserRouter>
-      </div>
-=======
+        <Navbar />
         <Home />
         <Qone setOrgNr={setOrgNr} OrgNr={OrgNr}/>
         <Rapport OrgNr={OrgNr}/>
-      </BrowserRouter>
->>>>>>> Stashed changes
+    </BrowserRouter>
+    </div>
   );
 }
 
