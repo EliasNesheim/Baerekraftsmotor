@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Row, Col } from "react-bootstrap";
+
+
 const axios = require('axios');
 
 let print = "";
@@ -9,6 +11,8 @@ let print = "";
 
 export default function Home(){
     const [postData, setPost] = useState(null);
+    const [companyData, setCompany] = useState(null);
+    const [OrgKode, setOrgKode] = useState(null);
 
     axios.get('http://13.48.137.2/getBrukernavn.php')
     .then(function (response) {
@@ -17,14 +21,16 @@ export default function Home(){
     console.log(response.data);
     setPost(JSON.stringify(response.data).slice(2,-5));
     console.log(print)
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .then(function () {
-    // always executed
-  });
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+    .then(function () {
+      // always executed
+    });
+
+    
 
     return(
         <main>
