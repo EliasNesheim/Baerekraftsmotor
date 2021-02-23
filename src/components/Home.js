@@ -33,16 +33,30 @@ export default function Home(){
     
 
     return(
-        <main>
-            <section>
-                <h1> Bærekraftsmotor</h1>
-                <h2> Piotr Marek Kramer </h2>
-                <h3>Øyvind</h3>
-                <section>
-                    <h1>respons fra get request fra server:</h1>
-                    <h2>{postData}</h2>
-                </section>
-            </section>
-        </main>
+<head>
+<meta charset="utf-8"> <!--Aksepterer ÆØÅ-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--Mobil skjermer-->
+<!--<link rel="stylesheet" href="pages.css"> -->
+<title>Bærekraftsmotor </title> <!--Tittel-->
+</head>
+<body>
+
+<div class="jumbotron"> <!--CSS-->
+  <h1>Bruk Bærekraftsmotor</h1> <!--Overskrift-->
+  <p class="">Bærekraftsmotor er en nettside som spør deg eller din bedrift en rekke spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> <!--Tekst-->
+  <hr class="">
+  <img src="Bilde1.png" alt="bilde av noter"> <!--Bilde-->
+  <br>
+  <br>
+  
+  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" style="right: 50%;"> <!--Mulighet gå tilbake til Simpact.no-->
+Gå tilbake til simpact.no
+</button> 
+
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal"> <!--Mulighet til å gå til spørreskjema-->
+Gå til spørreskjema
+</button>
+ </div>
+
         )
 }
