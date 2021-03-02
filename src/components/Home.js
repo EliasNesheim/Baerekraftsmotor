@@ -4,7 +4,6 @@ import { Button, Container, Row, Col } from "react-bootstrap";
 
 
 const axios = require('axios');
-
 let print = "";
 
 
@@ -14,12 +13,16 @@ export default function Home(){
     const [companyData, setCompany] = useState(null);
     const [OrgKode, setOrgKode] = useState(null);
 
-    axios.get('http://13.48.137.2/getBrukernavn.php')
+
+    const encodedString = Buffer.from('SELECT * FROM bedrift').toString('base64');
+    const url = 'http://13.48.137.2/bkk/Get.php?q=' + encodedString;
+    axios.get(url)
     .then(function (response) {
     // handle success
+    console.log(url);
     console.log(response);
     console.log(response.data);
-    setPost(JSON.stringify(response.data).slice(2,-5));
+    setPost(JSON.stringify(response.data).slice(1,-1));
     console.log(print)
     })
     .catch(function (error) {
@@ -36,8 +39,6 @@ export default function Home(){
         <main>
             <section>
                 <h1> Bærekraftsmotor</h1>
-                <h2> Piotr Marek Kramer </h2>
-                <h3>Øyvind</h3>
                 <section>
                     <h1>respons fra get request fra server:</h1>
                     <h2>{postData}</h2>
