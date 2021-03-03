@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Row, Col } from "react-bootstrap";
+import TilbakeKnapp from "./TilbakeKnapp";
 
 
 const axios = require('axios');
 const brreg = "https://data.brreg.no/enhetsregisteret/api/enheter/"
 
 
-export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNaceKode }){
+export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNaceKode, postData, setPost}){
 
     // get fra brreg med informasjon om git selskap
-    const [postData, setPost] = useState("");
     axios.get(brreg + OrgNr)
     .then(function (response) {
     // handle success
@@ -35,8 +35,6 @@ export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNac
     const handleInput = event => {
         setOrgNr(event.target.value.replace(/[ ]+/g, ''));  };
     
-
-
     if (postData === "") {
       console.log(postData)
       return(
@@ -51,10 +49,10 @@ export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNac
             
             <p>er {postData} riktig selskap?</p>
             <p> Hvist så trykk videre</p>
-            <Button onClick={() => setAppState(appState + 1)}>Videre</Button>
+            <TilbakeKnapp plusMinus appState={appState} setAppState={setAppState} />
             
         </div>
     )
   }
 }
-// 
+//  

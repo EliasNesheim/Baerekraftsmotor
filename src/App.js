@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import './App.css';
 import PageOne from "./components/PageOne";
 import PageTwo from "./components/PageTwo";
-
+import Home from "./components/Home";
+import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 
 function App() {
 
@@ -12,21 +13,42 @@ function App() {
   const [generateRapport, setGenerateRapport] = useState(null);
   const [appState, setAppState] = useState(0);
   const [naceKode, setNaceKode] = useState(null);
-
-  const logValue = () => {
-    console.log(appState);
-    };
+  const [postData, setPost] = useState("");
+ 
 
   return (
   <div className="App">
     <BrowserRouter>
+    
         <Navbar />
-        {appState == 0 &&
-        <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} />
-        }
-        {appState == 1 &&
-        <PageTwo naceKode={naceKode} />
-        }
+        <AnimateSharedLayout>
+          <AnimatePresence>
+            {appState === 0 &&
+            <motion.div
+              initial={{ y: "-100vh"}}
+              animate={{ y: 0}}
+              exit={{ y: "-100vh"}}
+              >
+              <Home />
+              <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
+            </motion.div>
+            }
+          </AnimatePresence>
+          <AnimatePresence>
+            {appState === 1 &&
+              <motion.div
+
+              initial={{ y: "+100vh"}}
+              animate={{ y: 0}}
+              
+              exit={{ y: "+100vh"}}
+              >
+                <PageTwo naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} />
+              </motion.div>
+            }
+          </AnimatePresence>
+        </AnimateSharedLayout>
+       
         
         
     </BrowserRouter>
