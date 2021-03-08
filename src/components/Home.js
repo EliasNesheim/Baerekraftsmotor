@@ -5,14 +5,12 @@ export default function Home(){
     
     return(
       <div>
-        <head>
-          <meta charset="utf-8" /> 
+          <meta charSet="utf-8" /> 
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <link rel="stylesheet" href="pages.css" />
           <title>Bærekraftsmotor </title> 
-          </head>
 
-        <div class="jumbotron"> 
+        <div className="jumbotron"> 
             <h1>Bruk Bærekraftsmotor</h1> 
             <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
 
