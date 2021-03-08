@@ -4,8 +4,10 @@ import Navbar from "./components/Navbar/Navbar";
 import './App.css';
 import PageOne from "./components/PageOne";
 import PageTwo from "./components/PageTwo";
+import PageOneAndAHalf from "./components/PageOneAndAHalf";
 import Home from "./components/Home";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 function App() {
 
@@ -14,6 +16,9 @@ function App() {
   const [appState, setAppState] = useState(0);
   const [naceKode, setNaceKode] = useState(null);
   const [postData, setPost] = useState("");
+  const [Answers, setAnswers] = useState({});
+  const [AnswerKey, setAnswerKey] = useState(0);
+
  
 
   return (
@@ -21,6 +26,9 @@ function App() {
     <BrowserRouter>
     
         <Navbar />
+        {appState === 0 && <ProgressBar now={33} />}
+        {appState === 1 && <ProgressBar now={66} />}
+        {appState === 2 && <ProgressBar now={100} />}
         <AnimateSharedLayout>
           <AnimatePresence>
             {appState === 0 &&
@@ -43,7 +51,20 @@ function App() {
               
               exit={{ y: "+100vh"}}
               >
-                <PageTwo naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} />
+                <PageOneAndAHalf appState={appState} setAppState={setAppState} Answers={Answers} setAnswers={setAnswers} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} />
+              </motion.div>
+            }
+          </AnimatePresence>
+          <AnimatePresence>
+            {appState === 2 &&
+              <motion.div
+
+              initial={{ y: "+100vh"}}
+              animate={{ y: 0}}
+              
+              exit={{ y: "+100vh"}}
+              >
+                <PageTwo naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} Answers={Answers}/>
               </motion.div>
             }
           </AnimatePresence>

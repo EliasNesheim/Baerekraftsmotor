@@ -3,14 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Row, Col } from "react-bootstrap";
 import TilbakeKnapp from "./TilbakeKnapp";
 import { motion } from 'framer-motion';
-import BKM from "./BKM";
 
 const axios = require('axios');
 const bkk = "http://13.48.137.2/bkk/getNace.php?nace="
 
-export default function PageTwo({ naceKode, appState, setAppState, postData, setPost}){
+export default function PageTwo({ naceKode, appState, setAppState, postData, setPost, Answers}){
     
-    
+    var debug = "0"; 
+    console.log("Answers: " + JSON.stringify(Answers["1"]));
     
     const [responseData, setResponseData] = useState("");
 
@@ -105,7 +105,10 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
                 <h2>Næring: {Næring}</h2>
                 <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
                 <ul>{BKM2}</ul>
-                
+                <ul>
+                    <li>svar for første spørsmål: {JSON.stringify(Answers["0"])}</li>
+                    <li>svar for andre spørsmål: {JSON.stringify(Answers["1"])}</li>
+                </ul>
                 </div>
 
     )
