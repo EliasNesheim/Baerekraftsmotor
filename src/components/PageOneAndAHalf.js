@@ -11,18 +11,28 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
 
     return(
         <div>
-            <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
-            <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
+        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
 
             <div>
                 {
                     //instansier spørsmål komponenten og inkrementerer AnswerKey mellom hvergang, variabler kommer fra app.js
                 }
-                <Question QType={"Skala"} QText={"I hvilken grad er bedriftens bærekraftsarbeids strategisk viktig?"} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} />
+                <Question QType={"Skala"} QText={"I hvilken grad er bedriftens bærekraftsarbeids strategisk viktig?"} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} setterofoption='Type1'/>
                 {AnswerKey = AnswerKey + 1 }
-                <Question QType={"Skala"} QText={"lol2k?"} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} />
+                <Question QType={"Skala"} QText={"lol2k?"} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} setterofoption='Type1'/>
+                {AnswerKey = AnswerKey + 1}
+    
+
+
+                <Question QType={"Skala"} QText={"Er Elon Mask eieren av Tasla?"} 
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} setterofoption='Type3' />
+                <Question QType={"Skala"} QText={"Er du en mann?"}      
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} setterofoption='Type2' />
+                
+                <Question QType={"Skala"} QText={"haha?"} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} setterofoption='Type1'/>
+                    
                 {AnswerKey = AnswerKey + 1 }
-                <Question QType={"Skala"} QText={"haha?"} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} />
             </div>
         </div>
     )
