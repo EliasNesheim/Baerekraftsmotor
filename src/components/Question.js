@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import RangeSlider from 'react-bootstrap-range-slider';
 
 
-export default function Question({ QType, QText, Answers, setAnswers, AnswerKey, setAnswerKey, setterofoption }) {
+export default function Question({ QType, QText, Answers, setAnswers, AnswerKey, setAnswerKey }) {
 
     const [value, setValue] = React.useState(3);
      //oppdaterer Answers objektet med ny verdi hver gang value blir endret
@@ -26,7 +26,7 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
 
 
     // min kode 
-    if (QType === "Skala" && setterofoption == "Type1") {
+    if (QType === "Type1") {
         return (
 
             <div className="Card">
@@ -57,7 +57,7 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
 
             </div>
         )
-    } else if (QType === "Skala" && setterofoption == "Type2") {
+    } else if (QType === "Type2") {
         return (
             <div className="Card">
                 <br></br>
@@ -70,7 +70,7 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
                 
             </div>
         )
-    } else if (QType === "Skala" && setterofoption == "Type3") {
+    } else if (QType === "Type3") {
         return (
             <div className="Card">
                 <br></br>
