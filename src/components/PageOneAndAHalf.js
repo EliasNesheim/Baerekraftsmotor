@@ -12,8 +12,8 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
 
     return(
         <div>
-            <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
-            <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
+        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
 
             <div>
                 {
@@ -38,9 +38,11 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                         {AnswerKey = AnswerKey + 1 }
                 </Form.Group>
                 <Form.Group as={Row}>
-                    <Question QType={"Skala"} QText={"widepeepoHappy"} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} />
+                    <Question QType={"Type3"} QText={"Er Elon Mask eieren av Tasla?"} 
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} />
                         {AnswerKey = AnswerKey + 1 }
-                    <Question QType={"Skala"} QText={"pepeHands"} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} />
+                <Question QType={"Type2"} QText={"Er du en mann?"}      
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers}  />
                         {AnswerKey = AnswerKey + 1 }
                 </Form.Group>
             </div>
