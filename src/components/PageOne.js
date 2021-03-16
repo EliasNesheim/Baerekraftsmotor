@@ -12,13 +12,13 @@ export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNac
 
     // get fra brreg med informasjon om git selskap
     axios.get(brreg + OrgNr)
-    .then(function (response) {
-    // handle success
-    console.log(brreg + OrgNr);
-    console.log(response);
-    console.log(response.data);
-    setPost(JSON.stringify(response.data.navn).slice(1,-1));
-    setNaceKode(JSON.stringify(response.data.naeringskode1.kode));
+      .then(function (response) {
+      // handle success
+      console.log(brreg + OrgNr);
+      console.log(response);
+      console.log(response.data);
+      setPost(JSON.stringify(response.data.navn).slice(1,-1));
+      setNaceKode(JSON.stringify(response.data.naeringskode1.kode));
     })
     .catch(function (error) {
       // handle error
@@ -34,6 +34,7 @@ export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNac
     // trim orgNr
     const handleInput = event => {
         setOrgNr(event.target.value.replace(/[ ]+/g, ''));  };
+        console.log(Date.now());
     
     if (postData === "") {
       console.log(postData)

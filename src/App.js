@@ -16,7 +16,7 @@ function App() {
   const [appState, setAppState] = useState(0);
   const [naceKode, setNaceKode] = useState(null);
   const [postData, setPost] = useState("");
-  const [Answers, setAnswers] = useState({});
+  const [Answers, setAnswers] = useState({[0]:3,[1]:3,[2]:3,[3]:3,[4]:3,[5]:3,[6]:3,[7]:3,});
   const [AnswerKey, setAnswerKey] = useState(0);
 
  

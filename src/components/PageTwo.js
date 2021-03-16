@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Row, Col } from "react-bootstrap";
 import TilbakeKnapp from "./TilbakeKnapp";
@@ -9,8 +9,10 @@ const bkk = "http://13.48.137.2/bkk/getNace.php?nace="
 
 export default function PageTwo({ naceKode, appState, setAppState, postData, setPost, Answers}){
     
+    
+
     var debug = "0"; 
-    console.log("Answers: " + JSON.stringify(Answers["1"]));
+    console.log("Answers: " + JSON.stringify(Answers));
     
     const [responseData, setResponseData] = useState("");
 
@@ -65,38 +67,69 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
     }
     console.log(naceBokstav);
     console.log(naceMainKode);
+    var noLoop;
     //query database med nacekode for å finne tilsvarende FN mål
-    axios.get(bkk + naceBokstav)
+    useEffect(
+        () => {
+        console.log("test1");
+        console.log(noLoop);
+        axios.get(bkk + naceBokstav)
+        .then(function (response) {
+            console.log("test1.5");
+            // handle success
+            console.log(bkk + naceMainKode);
+            console.log(response.data);
+            setResponseData(JSON.stringify(response.data));
+            //setNaceKode(JSON.stringify(response.data.naeringskode1.kode));
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+            console.log(bkk + naceMainKode);
+        });
+        console.log("test3");
+        noLoop = true;
+    },
+    []
+    );
+    //hent rapport data fra databasen
+    var url2 = "http://13.48.137.2/bkk/Get.php?q=";
+    var q = btoa("SELECT b.navn, b.organisasjonnr, n.beskrivelse, re.spm1, re.spm2, re.spm3, re.spm4, re.spm5, re.spm6, re.spm7, re.spm8, re.spm9, re.spm10, re.spm11, re.spm12, re.spm13, re.spm14, re.spm15, re.spm16, re.spm17, re.spm18, re.spm19, re.spm20 FROM rapport AS ra, resultat AS re, bedrift AS b, nace_grupper AS n WHERE ra.resultatid =  re.resultatid && b.bedriftid = re.bedriftid && b.nace_gruppe = n.naceid");
+    console.log("a");
+    console.log(url2 + q);
+    console.log("b");
+    axios.get(url2 + q)
     .then(function (response) {
     // handle success
-    console.log(bkk + naceMainKode);
+    console.log(response);
     console.log(response.data);
-    setResponseData(JSON.stringify(response.data));
-    //setNaceKode(JSON.stringify(response.data.naeringskode1.kode));
+    // setCompany(JSON.stringify("Navn: " + response.data.navn + " Org Kode: " + response.data.organisasjonsform.kode));
+    console.log(response.data.kode);
     })
     .catch(function (error) {
       // handle error
       console.log(error);
-      console.log(bkk + naceMainKode);
     })
     .then(function () {
-      // always executed
-      
+       
     });
+
     var Row = responseData.split("/");
     console.log("Row: " + Row);
     console.log(Row.length);
     var i;
     const BKM2 = [];
     const Næring = [];
-    for (i = 0; i < Row.length-1; i++){
-        var Words = Row[i].split(",");
-        console.log("PRE BKM Words: " + Words);
-        //BKM(Words={Words});
-        BKM2.push(<li>{Words[2]}, Vekting: {Words[3]}</li>);
-        /*if (i = 0){
-            Næring.push(Words[1])
-        } */
+    if(BKM2.length < 1 || BKM2 == undefined){
+        for (i = 0; i < Row.length-1; i++){
+            var Words = Row[i].split(",");
+            console.log("PRE BKM Words: " + Words);
+            //BKM(Words={Words});
+            BKM2.push(<li>{Words[2]}, Vekting: {Words[3]}</li>);
+            if (i === 0){
+                Næring.push(Words[1])
+            }
+        }
     }
     console.log("postData: "+ postData);
     return(
@@ -108,6 +141,12 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
                 <ul>
                     <li>svar for første spørsmål: {JSON.stringify(Answers["0"])}</li>
                     <li>svar for andre spørsmål: {JSON.stringify(Answers["1"])}</li>
+                    <li>svar for andre spørsmål: {JSON.stringify(Answers["2"])}</li>
+                    <li>svar for andre spørsmål: {JSON.stringify(Answers["3"])}</li>
+                    <li>svar for andre spørsmål: {JSON.stringify(Answers["4"])}</li>
+                    <li>svar for andre spørsmål: {JSON.stringify(Answers["5"])}</li>
+                    <li>svar for andre spørsmål: {JSON.stringify(Answers["6"])}</li>
+                    <li>svar for andre spørsmål: {JSON.stringify(Answers["7"])}</li>
                 </ul>
                 </div>
 

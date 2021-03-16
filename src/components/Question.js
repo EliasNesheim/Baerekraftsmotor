@@ -8,6 +8,9 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
 
     const [ value, setValue ] = React.useState(3);
     
+    // Set initial value in Answers (3)
+    
+
     //oppdaterer Answers objektet med ny verdi hver gang value blir endret
     // useEffect -> onUpdate
     useEffect(
@@ -23,6 +26,7 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
         },
         [value]
     );
+    
 
 
     //skriver ut skala spørsmålstypen:
@@ -31,13 +35,11 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
 
         return (
             <div className="Card">
-            <label> {QText}<br /><br />
-            Skala fra 0 – 5, 0 = Ikke viktig, 5= Helt avgjørende</label> <br />
+            <p> {QText} <br /> Skala fra 0 – 5, 0 = Ikke viktig, 5= Helt avgjørende</p>
                 <Form>
-                    <Form.Group as={Row}>
                     {// slideren
                     }
-                    <Col xs="7">
+                    <Col classname="4">
                         <RangeSlider
                         value={value}
                         max={5}
@@ -46,14 +48,13 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
                     </Col>
                     {// tekst input
                     }
-                    <Col xs="1">
+                    <Col classname="4">
                         <Form.Control value={value}
+                        max={5}
                         onChange={e => setValue(e.target.value)}
                             />
                     </Col>
-                    </Form.Group>
                 </Form>
-
         </div>
         )
     }
