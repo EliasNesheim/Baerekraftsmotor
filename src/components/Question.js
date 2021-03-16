@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import RangeSlider from 'react-bootstrap-range-slider';
 
 
+
 export default function Question({ QType, QText, Answers, setAnswers, AnswerKey, setAnswerKey }) {
 
     const [value, setValue] = React.useState(3);
@@ -23,6 +24,7 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
         },
         [value]
     );
+    
 
 
     // min kode 
@@ -30,6 +32,7 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
         return (
 
             <div className="Card">
+
                 <br></br>
                 <label> {QText}<br /><br />
                 Skala fra 0 – 5, 0 = Ikke viktig, 5= Helt avgjørende </label> <br />

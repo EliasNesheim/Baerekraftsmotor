@@ -35,6 +35,9 @@ export default function Rapport(OrgNr, appState, settAppState){
        
     });
 
+    
+
+
     if(companyData){
         return (
             <div>
