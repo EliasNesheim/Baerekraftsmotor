@@ -125,42 +125,7 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
     console.log("a");
     console.log(url2 + q);
     console.log("b");
-    axios.get(url2 + q)
-    .then(function (response) {
-    // handle success
-    console.log(response);
-    console.log(response.data);
-    // setCompany(JSON.stringify("Navn: " + response.data.navn + " Org Kode: " + response.data.organisasjonsform.kode));
-    console.log(response.data.kode);
-    })
-    .catch(function (error) {
-      // handle error
-      console.log(error);
-    })
-    .then(function () {
-       
-    });
-
-    var Row = responseData.split("/");
-    console.log("Row: " + Row);
-    console.log(Row.length);
-    var i;
-    const BKM2 = [];
-    const Næring = [];
-    if(BKM2.length < 1 || BKM2 == undefined){
-        for (i = 0; i < Row.length-1; i++){
-            var Words = Row[i].split(",");
-            console.log("PRE BKM Words: " + Words);
-            //BKM(Words={Words});
-            BKM2.push(<li>{Words[2]}, Vekting: {Words[3]}</li>);
-            if (i === 0){
-                Næring.push(Words[1])
-            }
-        }
-    }
-    console.log("postData: "+ postData);
-    console.log("Ans[0] " + Answers[0]);
-    console.log("Ans[1] " + Answers[1]);
+    
     
     useEffect(
         () => {
