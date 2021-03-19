@@ -5,12 +5,7 @@ import Form from 'react-bootstrap/Form';
 import RangeSlider from 'react-bootstrap-range-slider';
 
 
-<<<<<<< Updated upstream
-
-export default function Question({ QType, QText, Answers, setAnswers, AnswerKey, setAnswerKey }) {
-=======
 export default function Question({ QType, QText, Answers, setAnswers, AnswerKey, setAnswerKey, AppState }) {
->>>>>>> Stashed changes
 
     const [value, setValue] = React.useState(5);
      //oppdaterer Answers objektet med ny verdi hver gang value blir endret
@@ -38,15 +33,8 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
         return (
 
             <div className="Card">
-<<<<<<< Updated upstream
-
-                <br></br>
-                <label> {QText}<br /><br />
-                Skala fra 0 – 5, 0 = Ikke viktig, 5= Helt avgjørende </label> <br />
-=======
                 <label> {QText}
                 Skala fra 0 – 10, 0 = Ikke viktig, 10= Helt avgjørende </label> <br />
->>>>>>> Stashed changes
                 
                 <Form>
                     <Form.Group as={Row}>

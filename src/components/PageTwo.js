@@ -96,7 +96,6 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
     console.log(naceMainKode);
     var noLoop;
     //query database med nacekode for å finne tilsvarende FN mål
-<<<<<<< Updated upstream
     useEffect(
         () => {
         console.log("test1");
@@ -159,11 +158,6 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
             }
         }
     }
-=======
-    
-    console.log("Næring" + JSON.stringify(Næring));
-    console.log("BKM2" + JSON.stringify(BKM2));
->>>>>>> Stashed changes
     console.log("postData: "+ postData);
     console.log("Ans[0] " + Answers[0]);
     console.log("Ans[1] " + Answers[1]);
@@ -217,23 +211,6 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
     else {
         return(
         <div>
-<<<<<<< Updated upstream
-                <h1>{postData}</h1>
-                <h2>Næring: {Næring}</h2>
-                <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
-                <ul>{BKM2}</ul>
-                <ul>
-                    <li>svar for første spørsmål: {JSON.stringify(Answers["0"])}</li>
-                    <li>svar for andre spørsmål: {JSON.stringify(Answers["1"])}</li>
-                    <li>svar for andre spørsmål: {JSON.stringify(Answers["2"])}</li>
-                    <li>svar for andre spørsmål: {JSON.stringify(Answers["3"])}</li>
-                    <li>svar for andre spørsmål: {JSON.stringify(Answers["4"])}</li>
-                    <li>svar for andre spørsmål: {JSON.stringify(Answers["5"])}</li>
-                    <li>svar for andre spørsmål: {JSON.stringify(Answers["6"])}</li>
-                    <li>svar for andre spørsmål: {JSON.stringify(Answers["7"])}</li>
-                </ul>
-                </div>
-=======
             <h1>{postData}</h1>
             <h2>Næring: {Næring}</h2>
             <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
@@ -247,7 +224,6 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
                 <li>sum col 4 = {(parseInt(Answers[9])+parseInt(Answers[10])+parseInt(Answers[11]))}</li>
             </ul>
             </div>
->>>>>>> Stashed changes
 
     ) }
     
