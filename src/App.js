@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import './App.css';
+import './css/App.css';
 import PageOne from "./components/PageOne";
 import PageTwo from "./components/PageTwo";
 import PageOneAndAHalf from "./components/PageOneAndAHalf";
