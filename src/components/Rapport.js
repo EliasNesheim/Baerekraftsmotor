@@ -4,7 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const axios = require('axios');
 
-export default function Rapport(OrgNr){
+
+
+
+export default function Rapport(OrgNr, appState, settAppState){
+
+    function AppState() {
+        let num = appState +1;
+        settAppState = num;
+      }
 
     const [companyData, setCompany] = useState(null);
     const [returnData, setReturn] = useState(null);
@@ -27,18 +35,22 @@ export default function Rapport(OrgNr){
        
     });
 
+    
+
+
     if(companyData){
         return (
             <div>
-                <p>
-                    {companyData}
-                </p>
+                <p>test</p>
+                <p>{companyData}</p>
+                <p>Er dette dette riktig selskap? Hvist så, trykk videre --{">"} </p>
+                <button onClick={AppState}>Videre</button>;
             </div>
         )
     }
     else {
         return (
-            <div></div>
+            <div>test2</div>
         )
     }
     
