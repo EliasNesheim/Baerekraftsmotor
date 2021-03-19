@@ -8,6 +8,7 @@ import PageOneAndAHalf from "./components/PageOneAndAHalf";
 import Home from "./components/Home";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar'
+import { Button, Container, Row, Col } from "react-bootstrap";
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
   const [Answers, setAnswers] = useState({[0]:3,[1]:3,[2]:3,[3]:3,[4]:3,[5]:3,[6]:3,[7]:3,});
   const [AnswerKey, setAnswerKey] = useState(0);
 
- 
+
 
   return (
   <div className="App">
@@ -28,7 +29,7 @@ function App() {
         <Navbar />
         {appState === 0 && <ProgressBar now={33} />}
         {appState === 1 && <ProgressBar now={66} />}
-        {appState === 2 && <ProgressBar now={100} />}
+        {appState === 13 && <ProgressBar now={100} />}
         <AnimateSharedLayout>
           <AnimatePresence>
             {appState === 0 &&
@@ -43,7 +44,7 @@ function App() {
             }
           </AnimatePresence>
           <AnimatePresence>
-            {appState === 1 &&
+            {appState >= 1 && appState<=12 &&
               <motion.div
 
               initial={{ y: "+100vh"}}
@@ -51,12 +52,13 @@ function App() {
               
               exit={{ y: "+100vh"}}
               >
+                <Button onClick={console.log(JSON.stringify(Answers))}>Log</Button>
                 <PageOneAndAHalf appState={appState} setAppState={setAppState} Answers={Answers} setAnswers={setAnswers} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} />
               </motion.div>
             }
           </AnimatePresence>
           <AnimatePresence>
-            {appState === 2 &&
+            {appState >= 13 &&
               <motion.div
 
               initial={{ y: "+100vh"}}
