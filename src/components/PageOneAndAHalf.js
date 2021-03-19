@@ -150,6 +150,8 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <Question QType={"Skala"} QText={"I hvor stor grad vil fremtidige lovendringer og reguleringer kunne påvirke verdiskapingen i din bedrift?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> </div>
             )
+            break;
+        case 12:
             setAnswerKey(11);
             return(
                 <div><TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
