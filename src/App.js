@@ -26,9 +26,26 @@ function App() {
     <BrowserRouter>
     
         <Navbar />
+<<<<<<< Updated upstream
         {appState === 0 && <ProgressBar now={33} />}
         {appState === 1 && <ProgressBar now={66} />}
         {appState === 2 && <ProgressBar now={100} />}
+=======
+       
+        {appState === 1 && <ProgressBar now={8} />}
+        {appState === 2 && <ProgressBar now={16} />}
+        {appState === 3 && <ProgressBar now={24} />}
+        {appState === 4 && <ProgressBar now={32} />}
+        {appState === 5 && <ProgressBar now={40} />}
+        {appState === 6 && <ProgressBar now={48} />}
+        {appState === 7 && <ProgressBar now={56} />}
+        {appState === 8 && <ProgressBar now={64} />}
+        {appState === 9 && <ProgressBar now={72} />}
+        {appState === 10 && <ProgressBar now={80} />}
+        {appState === 11 && <ProgressBar now={88} />}
+        {appState === 12 && <ProgressBar now={95} />}
+        {appState === 13 && <ProgressBar now={100} />}
+>>>>>>> Stashed changes
         <AnimateSharedLayout>
           <AnimatePresence>
             {appState === 0 &&
@@ -37,8 +54,16 @@ function App() {
               animate={{ y: 0}}
               exit={{ y: "-100vh"}}
               >
+            <div class="containers">
+            <div class="rowing1">
               <Home />
+              </div>
+              <div class="rowing2">
               <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
+          
+          
+          </div>
+          </div>     
             </motion.div>
             }
           </AnimatePresence>
@@ -51,6 +76,11 @@ function App() {
               
               exit={{ y: "+100vh"}}
               >
+<<<<<<< Updated upstream
+=======
+                <div class="Farger">
+                <Button onClick={console.log(JSON.stringify(Answers))}>Lagre svar</Button></div>
+>>>>>>> Stashed changes
                 <PageOneAndAHalf appState={appState} setAppState={setAppState} Answers={Answers} setAnswers={setAnswers} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} />
               </motion.div>
             }

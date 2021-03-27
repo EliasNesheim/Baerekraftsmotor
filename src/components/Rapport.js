@@ -43,7 +43,7 @@ export default function Rapport(OrgNr, appState, settAppState){
             <div>
                 <p>test</p>
                 <p>{companyData}</p>
-                <p>Er dette dette riktig selskap? Hvist så, trykk videre --{">"} </p>
+                <p>Er dette dette riktig selskap? Hvis så, trykk videre --{">"} </p>
                 <button onClick={AppState}>Videre</button>;
             </div>
         )
