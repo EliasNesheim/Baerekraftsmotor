@@ -7,6 +7,7 @@ import TilbakeKnapp from "./TilbakeKnapp";
 const axios = require('axios');
 const brreg = "https://data.brreg.no/enhetsregisteret/api/enheter/"
 
+//check
 
 export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNaceKode, postData, setPost}){
 
