@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
+import '../index.css';
 import { Button, Container, Row, Col } from "react-bootstrap";
 import TilbakeKnapp from "./TilbakeKnapp";
 
