@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import './App.css';
+import './css/App.css';
 import PageOne from "./components/PageOne";
 import PageTwo from "./components/PageTwo";
 import PageOneAndAHalf from "./components/PageOneAndAHalf";
 import Home from "./components/Home";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar'
+import { Button, Container, Row, Col } from "react-bootstrap";
 
 function App() {
 
@@ -19,18 +20,14 @@ function App() {
   const [Answers, setAnswers] = useState({[0]:3,[1]:3,[2]:3,[3]:3,[4]:3,[5]:3,[6]:3,[7]:3,});
   const [AnswerKey, setAnswerKey] = useState(0);
 
- 
+
 
   return (
   <div className="App">
     <BrowserRouter>
     
         <Navbar />
-<<<<<<< Updated upstream
-        {appState === 0 && <ProgressBar now={33} />}
-        {appState === 1 && <ProgressBar now={66} />}
-        {appState === 2 && <ProgressBar now={100} />}
-=======
+
        
         {appState === 1 && <ProgressBar now={8} />}
         {appState === 2 && <ProgressBar now={16} />}
@@ -45,7 +42,7 @@ function App() {
         {appState === 11 && <ProgressBar now={88} />}
         {appState === 12 && <ProgressBar now={95} />}
         {appState === 13 && <ProgressBar now={100} />}
->>>>>>> Stashed changes
+
         <AnimateSharedLayout>
           <AnimatePresence>
             {appState === 0 &&
@@ -68,7 +65,7 @@ function App() {
             }
           </AnimatePresence>
           <AnimatePresence>
-            {appState === 1 &&
+            {appState >= 1 && appState<=12 &&
               <motion.div
 
               initial={{ y: "+100vh"}}
@@ -76,17 +73,18 @@ function App() {
               
               exit={{ y: "+100vh"}}
               >
-<<<<<<< Updated upstream
-=======
+
                 <div class="Farger">
                 <Button onClick={console.log(JSON.stringify(Answers))}>Lagre svar</Button></div>
->>>>>>> Stashed changes
+
+
+
                 <PageOneAndAHalf appState={appState} setAppState={setAppState} Answers={Answers} setAnswers={setAnswers} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} />
               </motion.div>
             }
           </AnimatePresence>
           <AnimatePresence>
-            {appState === 2 &&
+            {appState >= 13 &&
               <motion.div
 
               initial={{ y: "+100vh"}}
