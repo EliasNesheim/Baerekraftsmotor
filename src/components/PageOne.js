@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../index.css';
 import { Button, Container, Row, Col } from "react-bootstrap";
 import TilbakeKnapp from "./TilbakeKnapp";
 
@@ -7,7 +8,6 @@ import TilbakeKnapp from "./TilbakeKnapp";
 const axios = require('axios');
 const brreg = "https://data.brreg.no/enhetsregisteret/api/enheter/"
 
-//check
 
 export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNaceKode, postData, setPost}){
 
@@ -46,14 +46,16 @@ export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNac
     else {
       console.log("test1")
       return(
+
         <div>
             <input value={OrgNr} onChange={handleInput}/>
             
             <p>er {postData} riktig selskap?</p>
-            <p> Hvist så trykk videre</p>
+            <p> Hvis så trykk videre</p>
             <TilbakeKnapp plusMinus appState={appState} setAppState={setAppState} />
             
         </div>
+    
     )
   }
 }
