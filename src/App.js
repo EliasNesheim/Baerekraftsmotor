@@ -27,7 +27,8 @@ function App() {
     <BrowserRouter>
     
         <Navbar />
-       
+
+        {appState === 1 && <ProgressBar now={6} />}
         {appState === 1 && <ProgressBar now={8} />}
         {appState === 2 && <ProgressBar now={16} />}
         {appState === 3 && <ProgressBar now={24} />}
