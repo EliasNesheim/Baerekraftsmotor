@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import './css/App.css';
@@ -9,6 +9,10 @@ import Home from "./components/Home";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import { Button, Container, Row, Col } from "react-bootstrap";
+import { nace } from './components/Nace.js'
+
+
+const axios = require('axios');
 
 function App() {
 
@@ -19,8 +23,45 @@ function App() {
   const [postData, setPost] = useState("");
   const [Answers, setAnswers] = useState({[0]:3,[1]:3,[2]:3,[3]:3,[4]:3,[5]:3,[6]:3,[7]:3,});
   const [AnswerKey, setAnswerKey] = useState(0);
+  const [sessionMs, setSessionMs] = useState(null);
 
+  useEffect(
+    () => {
 
+      if ( appState === 1 && sessionMs === null) {
+        setSessionMs(Date.now());
+      }
+
+      if (appState === 1){
+        if (sessionMs === null) {
+          var pfft = Date.now();
+          console.log(pfft);
+          setSessionMs(pfft);
+          console.log(sessionMs);
+        }
+        console.log(sessionMs);
+        var url = ("http://13.53.68.33/bkk/setSession.php?");
+        var sms = pfft;
+        var bnavn = postData;
+        var orgnr = OrgNr;
+        var naceMainKode = naceKode;
+        console.log(naceMainKode);
+        console.log(nace(naceMainKode));
+        var ng = nace(naceMainKode);
+        var HeleURL =(url+"sms="+sms+"&bnavn="+bnavn+"&orgnr="+orgnr+"&ng="+ng);
+        console.log(HeleURL);
+
+        axios.get(HeleURL)
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            // handle error
+          })
+      }
+    }, [appState]
+    
+);
 
   return (
   <div className="App">
@@ -86,7 +127,7 @@ function App() {
               
               exit={{ y: "+100vh"}}
               >
-                <PageTwo naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} Answers={Answers}/>
+                <PageTwo naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} Answers={Answers} sessionMs={sessionMs}/>
               </motion.div>
             }
           </AnimatePresence>

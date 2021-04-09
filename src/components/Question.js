@@ -18,10 +18,11 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
                     ...Answers, [AnswerKey]: value, 
                 }
             );
+            /*
             console.log("Key: " + JSON.stringify(AnswerKey) + " value: " + value);
             console.log("AnsKey" + JSON.stringify(AnswerKey));
             console.log(JSON.stringify(Answers));
-            console.log(Answers);
+            console.log(Answers); */
         },
         [value, AnswerKey]
     );
