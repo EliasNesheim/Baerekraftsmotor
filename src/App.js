@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import { Button, Container, Row, Col } from "react-bootstrap";
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -19,28 +20,31 @@ function App() {
   const [postData, setPost] = useState("");
   const [Answers, setAnswers] = useState({[0]:3,[1]:3,[2]:3,[3]:3,[4]:3,[5]:3,[6]:3,[7]:3,});
   const [AnswerKey, setAnswerKey] = useState(0);
+  const percentage = 100
 
-
+  
 
   return (
-  <div className="App">
-    <BrowserRouter>
     
+    <div className="App">
+
+      <BrowserRouter>
+        
         <Navbar />
        
-        {appState === 1 && <ProgressBar now={8} />}
-        {appState === 2 && <ProgressBar now={16} />}
-        {appState === 3 && <ProgressBar now={24} />}
-        {appState === 4 && <ProgressBar now={32} />}
-        {appState === 5 && <ProgressBar now={40} />}
-        {appState === 6 && <ProgressBar now={48} />}
-        {appState === 7 && <ProgressBar now={56} />}
-        {appState === 8 && <ProgressBar now={64} />}
-        {appState === 9 && <ProgressBar now={72} />}
-        {appState === 10 && <ProgressBar now={80} />}
-        {appState === 11 && <ProgressBar now={88} />}
-        {appState === 12 && <ProgressBar now={95} />}
-        {appState === 13 && <ProgressBar now={100} />}
+        {appState === 1 && <ProgressBar now={percentage} label={`${0}% completed`} />}
+        {appState === 2 && <ProgressBar now={percentage} label={`${8}% completed`} />}
+        {appState === 3 && <ProgressBar now={percentage} label={`${16}% completed`} />}
+        {appState === 4 && <ProgressBar now={percentage} label={`${24}% completed`} />}
+        {appState === 5 && <ProgressBar now={percentage} label={`${32}% completed`} />}
+        {appState === 6 && <ProgressBar now={percentage} label={`${40}% completed`} />}
+        {appState === 7 && <ProgressBar now={percentage} label={`${48}% completed`} />}
+        {appState === 8 && <ProgressBar now={percentage} label={`${56}% completed`} />}
+        {appState === 9 && <ProgressBar now={percentage} label={`${64}% completed`} />}
+        {appState === 10 && <ProgressBar now={percentage} label={`${72}% completed`} />}
+        {appState === 11 && <ProgressBar now={percentage} label={`${80}% completed`} />}
+        {appState === 12 && <ProgressBar now={percentage} label={`${90}% completed`} />}
+        {appState === 13 && <ProgressBar now={percentage} label={`${100}% completed`} />}
         <AnimateSharedLayout>
           <AnimatePresence>
             {appState === 0 &&
@@ -71,8 +75,7 @@ function App() {
               
               exit={{ y: "+100vh"}}
               >
-                <div class="Farger">
-                <Button onClick={console.log(JSON.stringify(Answers))}>Lagre svar</Button></div>
+              
                 <PageOneAndAHalf appState={appState} setAppState={setAppState} Answers={Answers} setAnswers={setAnswers} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} />
               </motion.div>
             }
@@ -94,8 +97,15 @@ function App() {
        
         
         
-    </BrowserRouter>
+        
+        </BrowserRouter>
+        <div class="Farger">
+        <Button onClick={console.log(JSON.stringify(Answers))}>Lagre svar</Button>
+      </div>
+        
+  
     </div>
+    
   );
 }
 
