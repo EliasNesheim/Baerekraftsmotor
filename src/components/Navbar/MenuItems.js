@@ -1,7 +1,7 @@
 export const MenuItems = [
     {
-        title: 'Home',
-        url: '#',
+        title: 'Hjem',
+        url: 'https://simpact.no/',
         cName: 'nav-links'
     },
     {
@@ -15,14 +15,20 @@ export const MenuItems = [
        // cName: 'nav-links'
     //},
     {
-        title: 'Contact Us',
-        url: '#',
+        title: 'Kontakt oss',
+        url: 'https://simpact.no/#YJdEuYGxXuQQ7g87M',
         cName: 'nav-links'
     },
+
     {
-        title: 'Sign up',
-        url: '#',
-        cName: 'nav-links-mobile'
-    }
+        title: 'Om oss',
+        url: 'https://simpact.no/#oSrEhs6wMpuQNTaj3',
+        cName: 'nav-links'
+    },
+    //{
+        //title: 'Sign up',
+        //url: '#',
+        //cName: 'nav-links-mobile'
+    //}
 
 ]
