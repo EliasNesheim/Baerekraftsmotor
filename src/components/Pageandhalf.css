@@ -1,5 +1,5 @@
 .hello {
-   background-color:greenyellow; 
+   background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
@@ -7,14 +7,14 @@
    
 }
 .hello1 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2;
    width:100%;
    height:auto;
    padding:15%;
    font-size: 24px;
 }
 .hello2 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2;
    width:100%;
    height:auto;
    padding:15%;
@@ -22,7 +22,7 @@
 }
 
 .hello3 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2;
    width:100%;
    height:auto;
    padding:15%;
@@ -30,14 +30,14 @@
 }
 
 .hello4 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
    font-size: 25px;
 }
 .hello5 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
@@ -45,42 +45,42 @@
 }
 
 .hello6 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
    font-size: 25px;
 }
 .hello7 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
    font-size: 25px;
 }
 .hello8 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
    font-size: 25px;
 }
 .hello9 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
    font-size: 25px;
 }
 .hello10 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
    font-size: 25px;
 }
 .hello11 {
-   background-color:greenyellow; 
+   background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
@@ -91,7 +91,17 @@
 .containers{
 display:flex;
 flex-direction: row;
-background-color: #e9ecef;
+background-color: #F2F2F2;
+}
+
+.progress-bar{
+   background-color: #1a8a16; 
+   border: 1px solid rgba(255, 255, 255, 1); 
+   border-radius: 15px; 
+   height: 16px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+
 }
 
 .buttonscontainer{
@@ -113,7 +123,8 @@ margin-left:40px;
    }
 
 .jumbotron{
-padding-bottom: 311px;  
+padding-bottom: 311px;
+background-color: #F2F2F2;  
 }
    
 .rowing1{
@@ -128,7 +139,7 @@ margin-top:70px;
 
 .body
 {
-background-color: greenyellow;
+background-color: #F2F2F2;
 }
 
 .card
@@ -136,10 +147,14 @@ background-color: greenyellow;
 width: 70%;   
 }
 
-.Farger {background-color:royalblue;}
+.Farger {
+   background-color:#ACCF71;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
 
 .NavbarItems {
-   background: linear-gradient(90deg, rgb(53, 153, 42) 0%, rgb(113, 150, 108) 100%);
+   background: #ACCF71;
    height: 80px;
    display: flex;
    justify-content: center;
@@ -160,6 +175,7 @@ width: 70%;
 }*/
 
 .nav-menu {
+   margin-top: 5px;
    display: grid;
    grid-template-columns: repeat(5, auto);
    grid-gap: 10px;
@@ -171,13 +187,13 @@ width: 70%;
 }
 
 .nav-links {
-   color: white;
+   color: rgb(0,0,0);
    text-decoration: none;
    padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-   background-color: #6d76f7;
+   background-color: #f2f2f2;
    border-radius: 4px;
    transition: all 0.2s ease-out;
 }
@@ -218,7 +234,7 @@ width: 70%;
 
 
   .nav-menu.active {
-   background: #6668f4;
+   background: rgb(255,255,255);
    left: 0;
    opacity: 1;
    transition: all 0.5s ease;
@@ -233,7 +249,7 @@ width: 70%;
 }
 
 .nav-links:hover {
-   background-color: #7577fa;
+   background-color: #CAEAAC;
    border-radius: 0;
 }
 
@@ -266,7 +282,7 @@ width: 70%;
    margin: 2rem auto;
    border-radius: 4px;
    width: 80%;
-   background: #4ad9e4;
+   background: #ACCF71;
    text-decoration: none;
    color: #fff;
    font-size: 1.5rem;
@@ -274,7 +290,7 @@ width: 70%;
 
 .nav-links-mobile:hover {
    background: #fff;
-   color: #6568F4;
+   color: #ACCF71;
    transition: 250ms;
 }
 
@@ -285,7 +301,6 @@ font-size: 30px;
    display: none;
 
 }
-
 
 
 }
