@@ -18,10 +18,11 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
                     ...Answers, [AnswerKey]: value, 
                 }
             );
+            /*
             console.log("Key: " + JSON.stringify(AnswerKey) + " value: " + value);
             console.log("AnsKey" + JSON.stringify(AnswerKey));
             console.log(JSON.stringify(Answers));
-            console.log(Answers);
+            console.log(Answers); */
         },
         [value, AnswerKey]
     );
@@ -49,11 +50,13 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
                         </Col>
                         {// tekst input
                         }
+                        <div class="cr">
                         <Col xs="1">
                             <Form.Control value={value}
                                 onChange={e => setValue(e.target.value)}
                             />
                         </Col>
+                        </div>
                     </Form.Group>
                 </Form>
 
