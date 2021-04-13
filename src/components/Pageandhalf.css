@@ -153,6 +153,18 @@ width: 70%;
    padding-bottom: 5px;
 }
 
+.btn{
+background-color: #3CB371;
+}
+
+.slider{
+   width:100%;
+   margin-left: 300px;
+   padding-top:5%;
+ }
+
+
+
 .NavbarItems {
    background: #ACCF71;
    height: 80px;
@@ -301,6 +313,9 @@ font-size: 30px;
    display: none;
 
 }
-
+.slider{
+   width:100%;
+   margin-left: 100px;
+ }
 
 }

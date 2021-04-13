@@ -41,6 +41,7 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
                     <Form.Group as={Row}>
                         {// slideren
                         }
+                        <div class="slider">
                         <Col xs="7">
                             <RangeSlider
                                 value={value}
@@ -48,15 +49,16 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
                                 onChange={e => setValue(e.target.value)}
                             />
                         </Col>
+                        </div>
                         {// tekst input
                         }
-                        <div class="cr">
-                        <Col xs="1">
-                            <Form.Control value={value}
-                                onChange={e => setValue(e.target.value)}
-                            />
-                        </Col>
-                        </div>
+
+
+
+
+
+
+
                     </Form.Group>
                 </Form>
 
