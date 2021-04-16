@@ -1,4 +1,7 @@
 import React from "react";
+import Chart from "chart.js";
+export default function LagGraf(){
+    /*lager ny graf (chart)*/
 var ctx = document.getElementById('myChart');
 var myChart = new Chart(ctx, {
     type: 'polarArea',
@@ -32,8 +35,12 @@ var myChart = new Chart(ctx, {
         
     }
 });
+/*finn metode for å ikke bruke kilden fra denne andre websiden*/
 return (
     <div>
     <canvas id="myChart" width="400" height="400"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script></script>
     </div>
     )
+}
