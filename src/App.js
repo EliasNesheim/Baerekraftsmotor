@@ -78,19 +78,19 @@ function App() {
         
         <Navbar />
        
-        {appState === 1 && <ProgressBar now={percentage} label={`${0}% completed`} />}
-        {appState === 2 && <ProgressBar now={percentage} label={`${8}% completed`} />}
-        {appState === 3 && <ProgressBar now={percentage} label={`${16}% completed`} />}
-        {appState === 4 && <ProgressBar now={percentage} label={`${24}% completed`} />}
-        {appState === 5 && <ProgressBar now={percentage} label={`${32}% completed`} />}
-        {appState === 6 && <ProgressBar now={percentage} label={`${40}% completed`} />}
-        {appState === 7 && <ProgressBar now={percentage} label={`${48}% completed`} />}
-        {appState === 8 && <ProgressBar now={percentage} label={`${56}% completed`} />}
-        {appState === 9 && <ProgressBar now={percentage} label={`${64}% completed`} />}
-        {appState === 10 && <ProgressBar now={percentage} label={`${72}% completed`} />}
-        {appState === 11 && <ProgressBar now={percentage} label={`${80}% completed`} />}
-        {appState === 12 && <ProgressBar now={percentage} label={`${90}% completed`} />}
-        {appState === 13 && <ProgressBar now={percentage} label={`${100}% completed`} />}
+        {appState === 1 && <ProgressBar now={1} label={`${0}% completed`} />}
+        {appState === 2 && <ProgressBar now={8} label={`${8}% completed`} />}
+        {appState === 3 && <ProgressBar now={16} label={`${16}% completed`} />}
+        {appState === 4 && <ProgressBar now={24} label={`${24}% completed`} />}
+        {appState === 5 && <ProgressBar now={32} label={`${32}% completed`} />}
+        {appState === 6 && <ProgressBar now={40} label={`${40}% completed`} />}
+        {appState === 7 && <ProgressBar now={48} label={`${48}% completed`} />}
+        {appState === 8 && <ProgressBar now={56} label={`${56}% completed`} />}
+        {appState === 9 && <ProgressBar now={64} label={`${64}% completed`} />}
+        {appState === 10 && <ProgressBar now={72} label={`${72}% completed`} />}
+        {appState === 11 && <ProgressBar now={80} label={`${80}% completed`} />}
+        {appState === 12 && <ProgressBar now={90} label={`${90}% completed`} />}
+        {appState === 13 && <ProgressBar now={100} label={`${100}% completed`} />}
         <AnimateSharedLayout>
           <AnimatePresence>
             {appState === 0 &&
