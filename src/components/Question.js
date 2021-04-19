@@ -50,15 +50,6 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
                             />
                         </Col>
                         </div>
-                        {// tekst input
-                        }
-
-
-
-
-
-
-
                     </Form.Group>
                 </Form>
 

@@ -15,21 +15,18 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
             setAnswerKey(0);
             return(
                 <div class="hello">
-                <div>
                     <Question QType={"Skala"} QText={"Hvor stor er risikoen for at ressursene blir knappere i bedriftens leverandørkjede om tre år? "}
                      AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
                     
                     <div class="buttonscontainer">
-                     <div class="buttonspace1">
-                     <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
-                     </div>
-                     <div class="buttonspace2">
-                     <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
-                     </div>
-                     </div>
-                    
- </div>
- </div>
+                        <div class="buttonspace1">
+                            <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
+                        </div>
+                            <div class="buttonspace2">
+                            <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+                        </div>
+                    </div>
+                </div>
             )
             break;
         case 2:
