@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import './css/App.css';
 import PageOne from "./components/PageOne";
-import PageTwo from "./components/PageTwo";
+import PageTwoTwo from "./components/PageTwoTwo";
 import PageOneAndAHalf from "./components/PageOneAndAHalf";
 import Home from "./components/Home";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
@@ -25,7 +25,7 @@ function App() {
   const [appState, setAppState] = useState(0);
   const [naceKode, setNaceKode] = useState(null);
   const [postData, setPost] = useState("");
-  const [Answers, setAnswers] = useState({[0]:3,[1]:3,[2]:3,[3]:3,[4]:3,[5]:3,[6]:3,[7]:3,});
+  const [Answers, setAnswers] = useState({[0]:3,[1]:3,});
   const [AnswerKey, setAnswerKey] = useState(0);
   const [sessionMs, setSessionMs] = useState(null);
 
@@ -44,7 +44,7 @@ function App() {
           console.log(sessionMs);
         }
         console.log(sessionMs);
-        var url = ("http://13.53.68.33/bkk/setSession.php?");
+        var url = ("http://13.51.89.24/bkk/setSession.php?");
         var sms = pfft;
         var bnavn = postData;
         var orgnr = OrgNr;
@@ -70,7 +70,11 @@ function App() {
 
   
 
+
+
   return (
+    
+
     
     <div className="App">
 
@@ -78,19 +82,19 @@ function App() {
         
         <Navbar />
        
-        {appState === 1 && <ProgressBar now={percentage} label={`${0}% completed`} />}
-        {appState === 2 && <ProgressBar now={percentage} label={`${8}% completed`} />}
-        {appState === 3 && <ProgressBar now={percentage} label={`${16}% completed`} />}
-        {appState === 4 && <ProgressBar now={percentage} label={`${24}% completed`} />}
-        {appState === 5 && <ProgressBar now={percentage} label={`${32}% completed`} />}
-        {appState === 6 && <ProgressBar now={percentage} label={`${40}% completed`} />}
-        {appState === 7 && <ProgressBar now={percentage} label={`${48}% completed`} />}
-        {appState === 8 && <ProgressBar now={percentage} label={`${56}% completed`} />}
-        {appState === 9 && <ProgressBar now={percentage} label={`${64}% completed`} />}
-        {appState === 10 && <ProgressBar now={percentage} label={`${72}% completed`} />}
-        {appState === 11 && <ProgressBar now={percentage} label={`${80}% completed`} />}
-        {appState === 12 && <ProgressBar now={percentage} label={`${90}% completed`} />}
-        {appState === 13 && <ProgressBar now={percentage} label={`${100}% completed`} />}
+        {appState === 1 && <ProgressBar now={7.69 * appState} label={`${0}% completed`} />}
+        {appState === 2 && <ProgressBar now={7.69 * appState} label={`${8}% completed`} />}
+        {appState === 3 && <ProgressBar now={7.69 * appState} label={`${16}% completed`} />}
+        {appState === 4 && <ProgressBar now={7.69 * appState} label={`${24}% completed`} />}
+        {appState === 5 && <ProgressBar now={7.69 * appState} label={`${32}% completed`} />}
+        {appState === 6 && <ProgressBar now={7.69 * appState} label={`${40}% completed`} />}
+        {appState === 7 && <ProgressBar now={7.69 * appState} label={`${48}% completed`} />}
+        {appState === 8 && <ProgressBar now={7.69 * appState} label={`${56}% completed`} />}
+        {appState === 9 && <ProgressBar now={7.69 * appState} label={`${64}% completed`} />}
+        {appState === 10 && <ProgressBar now={7.69 * appState} label={`${72}% completed`} />}
+        {appState === 11 && <ProgressBar now={7.69 * appState} label={`${80}% completed`} />}
+        {appState === 12 && <ProgressBar now={7.69 * appState} label={`${90}% completed`} />}
+        {appState === 13 && <ProgressBar now={100} label={`${100}% completed`} />}
         <AnimateSharedLayout>
           <AnimatePresence>
             {appState === 0 &&
@@ -135,7 +139,7 @@ function App() {
               
               exit={{ y: "+100vh"}}
               >
-                <PageTwo naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} Answers={Answers} sessionMs={sessionMs}/>
+                <PageTwoTwo naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} Answers={Answers} sessionMs={sessionMs}/>
               </motion.div>
             }
           </AnimatePresence>
