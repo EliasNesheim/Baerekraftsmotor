@@ -55,29 +55,5 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
 
             </div>
         )
-    } else if (QType === "JaNei") {
-        return (
-            <div className="Card">
-                <label> {QText} {" "}
-                    <button type="button" class="btn btn-primary" onClick={() => setValue("Ja")}> Ja </button>
-                    {" "}
-                    <button type="button" class="btn btn-primary" onClick={() => setValue("Nei")}> Nei </button>
-                    {value}
-                </label>
-                
-            </div>
-        )
-    } else if (QType === "JaNeiU") {
-        return (
-            <div className="Card">
-                <label> {QText} {" "}</label>
-                    <button type="button" class="btn btn-primary" onClick={() => setValue("Ja")}> Ja </button>
-                    {" "}
-                    <button type="button" class="btn btn-primary" onClick={() => setValue("Nei")}> Nei </button>
-                    {" "}
-                    <button type="button" class="btn btn-primary" onClick={() => setValue("Usikker")}> Usikker </button>
-                    <div>{value}</div>
-            </div>
-        )
     }   else { return(<p>bug</p>)}
 }

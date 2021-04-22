@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
 
 export function nace (naceMainKode){
-    naceMainKode = naceMainKode.slice(1,3)
+    
+    console.log(typeof naceMainKode);
+    console.log(naceMainKode);
+    naceMainKode = parseInt(naceMainKode);
+    console.log(typeof naceMainKode);
     console.log(naceMainKode);
     if (naceMainKode <= 2 ){
+        console.log("feilfeil")
         return 1;
     } else if (naceMainKode <= 3 ){
         return 2;

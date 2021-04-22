@@ -1,46 +1,42 @@
-import React from "react";
-import Chart from "chart.js";
-export default function LagGraf(){
-    /*lager ny graf (chart)*/
-var ctx = document.getElementById('myChart');
-var myChart = new Chart(ctx, {
-    type: 'polarArea',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-        
-    },
-    
-    options: {
-        
-    }
-});
-/*finn metode for å ikke bruke kilden fra denne andre websiden*/
-return (
-    <div>
-    <canvas id="myChart" width="400" height="400"></canvas>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script></script>
+import React from 'react'
+import { Bar } from 'react-chartjs-2'
+
+export default function BarChart( {Values} ) {
+
+    console.log("graf: " + Values)
+    return <div>
+        <Bar
+            data={{
+                labels: ['Leverandører', 'Operasjoner', 'Produkt', 'Forretningsmodell', 'Knappe ressurser', 'Lovendringer', 'Markedsendringer'],
+                datasets: [
+                    {
+                        label: 'Sum of Rows',
+                        data: Values,
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(255, 206, 86, 0.2)'
+                        ]
+                    }
+                ]
+
+            }}
+            height={400}
+            width={600}
+            options={{
+                maintainAspectRatio: false,
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }}
+        />
     </div>
-    )
 }

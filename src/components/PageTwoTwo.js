@@ -5,6 +5,7 @@ import TilbakeKnapp from "./TilbakeKnapp";
 import { motion } from 'framer-motion';
 import { nace } from './Nace.js'
 import { render } from "@testing-library/react";
+import BarChart from "./Graf.js";
 
 const axios = require('axios');
 const bkk = "http://13.51.89.24/bkk/getNace.php?nace="
@@ -17,9 +18,11 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
     const [Mål, setMål] = useState([]);
     const [Næring, setNæring] = useState([]);
 
-    var NaceId = null;
+    
     var naceMainKode = naceKode.slice(1,3);
-    NaceId = nace(naceMainKode);
+    console.log("input: " + naceMainKode);
+    var NaceId = nace(naceMainKode);
+    console.log("output: " + NaceId);
 
 
     //set rapport data til databasen
@@ -72,7 +75,17 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
     .then(function (response) {console.log(response)})
     .catch(function (error) {console.log(error)})
     
+    var sumcol1 = (parseInt(Answers[0])+parseInt(Answers[1])+parseInt(Answers[2]))
+    var sumcol2 = (parseInt(Answers[3])+parseInt(Answers[4])+parseInt(Answers[5]))
+    var sumcol3 = (parseInt(Answers[6])+parseInt(Answers[7])+parseInt(Answers[8]))
+    var sumcol4 = (parseInt(Answers[9])+parseInt(Answers[10])+parseInt(Answers[11]))
 
+    var sumrow1 = (parseInt(Answers[0])+parseInt(Answers[3])+parseInt(Answers[6])+parseInt(Answers[9]))
+    var sumrow2 = (parseInt(Answers[1])+parseInt(Answers[4])+parseInt(Answers[7])+parseInt(Answers[10]))
+    var sumrow3 = (parseInt(Answers[2])+parseInt(Answers[5])+parseInt(Answers[8])+parseInt(Answers[11]))
+    //var sumrow3 = (5);
+    var values = [sumcol1, sumcol2, sumcol3, sumcol4, sumrow1, sumrow2, sumrow3];
+    console.log(values);
     return(
         <div>
               
@@ -83,19 +96,7 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
             ))}
             {JSON.stringify(Mål[6])}
 
-            <ul>
-                
-                <li>sum col 1 = {(parseInt(Answers[0])+parseInt(Answers[1])+parseInt(Answers[2]))}</li>
-                <li>sum col 2 = {(parseInt(Answers[3])+parseInt(Answers[4])+parseInt(Answers[5]))}</li>
-                <li>sum col 3 = {(parseInt(Answers[6])+parseInt(Answers[7])+parseInt(Answers[8]))}</li>
-                <li>sum col 4 = {(parseInt(Answers[9])+parseInt(Answers[10])+parseInt(Answers[11]))}</li>
-            </ul>
-            <ul>
-            <li>sum Row 1 = {(parseInt(Answers[0])+parseInt(Answers[3])+parseInt(Answers[6])+parseInt(Answers[9]))}</li>
-            <li>sum Row 1 = {(parseInt(Answers[1])+parseInt(Answers[4])+parseInt(Answers[7])+parseInt(Answers[10]))}</li>
-            <li>sum Row 1 = {(parseInt(Answers[2])+parseInt(Answers[5])+parseInt(Answers[8])+parseInt(Answers[11]))}</li>
-
-            </ul>
+            <BarChart Values ={values}/>
 
             <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
 

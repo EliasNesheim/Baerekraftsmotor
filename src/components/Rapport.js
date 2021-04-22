@@ -25,7 +25,7 @@ export default function Rapport(OrgNr, appState, settAppState){
     console.log(response);
     console.log(response.data);
     setCompany(JSON.stringify("Navn: " + response.data.navn + " Org Kode: " + response.data.organisasjonsform.kode));
-    console.log(response.data.kode);
+    console.log("response.data.kode: " + response.data.kode);
     })
     .catch(function (error) {
       // handle error
@@ -50,7 +50,7 @@ export default function Rapport(OrgNr, appState, settAppState){
     }
     else {
         return (
-            <div>test2</div>
+            <div>err</div>
         )
     }
     

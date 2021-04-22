@@ -5,7 +5,6 @@ import './css/App.css';
 import PageOne from "./components/PageOne";
 import PageTwoTwo from "./components/PageTwoTwo";
 import PageOneAndAHalf from "./components/PageOneAndAHalf";
-import Home from "./components/Home";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import { Button, Container, Row, Col } from "react-bootstrap";
@@ -49,6 +48,7 @@ function App() {
         var bnavn = postData;
         var orgnr = OrgNr;
         var naceMainKode = naceKode;
+        naceMainKode = naceMainKode.slice(1,3)
         console.log(naceMainKode);
         console.log(nace(naceMainKode));
         var ng = nace(naceMainKode);
@@ -103,16 +103,8 @@ function App() {
               animate={{ y: 0}}
               exit={{ y: "-100vh"}}
               >
-            <div class="containers">
-            <div class="rowing1">
-              <Home />
-              </div>
-              <div class="rowing2">
               <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
-          
-          
-          </div>
-          </div>     
+              
             </motion.div>
             }
           </AnimatePresence>
@@ -149,12 +141,9 @@ function App() {
         
         
         </BrowserRouter>
-        <div class="Farger">
-        <Button onClick={console.log(JSON.stringify(Answers))}>Lagre svar</Button>
       </div>
         
   
-    </div>
     
   );
 }

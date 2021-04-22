@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
 import { Button, Container, Row, Col } from "react-bootstrap";
 import TilbakeKnapp from "./TilbakeKnapp";
-
+import "./Pageandhalf.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const axios = require('axios');
 const brreg = "https://data.brreg.no/enhetsregisteret/api/enheter/"
@@ -46,8 +47,13 @@ export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNac
     else {
       console.log("test1")
       return(
-
         <div>
+            <h1 className="Tittel">Bruk Bærekraftsmotor</h1> 
+            <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+            <p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+            <p><a href="https://simpact.no/"> https://simpact.no/</a></p>
+
             <input value={OrgNr} onChange={handleInput}/>
             
             <p>er {postData} riktig selskap?</p>
