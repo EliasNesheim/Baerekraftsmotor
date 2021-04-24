@@ -16,3 +16,15 @@ export default function PageTwo( { plusMinus, appState, setAppState }){
     }
 }
 
+export function BKknapp( { set1, set17, setAppState } ){
+    if (set1 == true){
+        return(
+            <Button onClick={() => setAppState(1)}>Tilbake</Button>
+        )
+    } 
+    else if (set17==true) {
+        return(
+            <Button onClick={() => setAppState(17)}>Tilbake</Button>
+        )
+    }
+}

@@ -1,8 +1,10 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+* 
+{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 
@@ -43,4 +45,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.malbeskrivelse h2{
+  font-size: 20px;
+  font-weight: bold;
+}
+.malbeskrivelse p{
+  font-size: 14px;
+}
+.malbeskrivelse h3{
+  font-size: 18px;
+  font-weight: bold;
 }

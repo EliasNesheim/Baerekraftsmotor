@@ -8,8 +8,8 @@ import PageOneAndAHalf from "./components/PageOneAndAHalf";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import { Button, Container, Row, Col } from "react-bootstrap";
-
 import { nace } from './components/Nace.js'
+import Baekraftsliste from "./components/Baerekraftsliste";
 
 
 const axios = require('axios');
@@ -104,7 +104,7 @@ function App() {
               exit={{ y: "-100vh"}}
               >
               <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
-              
+              <Baekraftsliste/>
             </motion.div>
             }
           </AnimatePresence>
