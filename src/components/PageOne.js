@@ -42,18 +42,14 @@ export default function PageOne({ OrgNr, setOrgNr, appState, setAppState, setNac
       console.log(postData)
       return(
       <input onChange={handleInput} placeholder="skriv org nummeret ditt"/>
+      
       )
     }
     else {
       console.log("test1")
       return(
         <div>
-            <h1 className="Tittel">Bruk Bærekraftsmotor</h1> 
-            <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
-
-            <p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
-            <p><a href="https://simpact.no/"> https://simpact.no/</a></p>
-
+          
             <input value={OrgNr} onChange={handleInput}/>
             
             <p>er {postData} riktig selskap?</p>

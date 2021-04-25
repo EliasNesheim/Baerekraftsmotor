@@ -5,6 +5,7 @@ import './css/App.css';
 import PageOne from "./components/PageOne";
 import PageTwoTwo from "./components/PageTwoTwo";
 import PageOneAndAHalf from "./components/PageOneAndAHalf";
+import Home from "./components/Home";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import { Button, Container, Row, Col } from "react-bootstrap";
@@ -102,9 +103,15 @@ function App() {
               initial={{ y: "-100vh"}}
               animate={{ y: 0}}
               exit={{ y: "-100vh"}}
-              >
+              >            
+              <div class="containers">
+              <div class="sidebyside1">
+                <Home />
+                </div>
+                <div class="sidebyside2">
               <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
-              
+              </div>
+          </div> 
             </motion.div>
             }
           </AnimatePresence>
@@ -150,15 +157,4 @@ function App() {
 
 export default App;
 
-/* <Home />
 
-
-        
-        <Qone setOrgNr={setOrgNr} OrgNr={OrgNr}/>
-        {appState == 0 &&
-        <Rapport OrgNr={OrgNr} appState={appState} settAppState={settAppState}/>
-        }
-        {appState == 1 &&
-        <p> hahah</p>
-        }
-        */
