@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Baekraftsliste({appState, setAppState}){
   switch(appState){
-    
     case 1:
       return(
         <div>
@@ -16,8 +15,8 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-  
-        <TilbakeKnapp set17={true} appState={appState} setAppState={setAppState} />
+
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
 
@@ -38,12 +37,13 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
-
+  
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
         </div>
         </div>
         </div>
@@ -59,12 +59,13 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
-
+  
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
         </div>
         </div>
         </div>
@@ -76,16 +77,17 @@ export default function Baekraftsliste({appState, setAppState}){
         <h2>FNs Bærekraftsmål og forklaring</h2>
         <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
         <h3>4. God Utdanning</h3>
-        <p>Sikre inkluderende, rettferdig og god utdanning og fremme muligheter for livslang læring for alle</p>
+        <p>Sikre inkluderende, rettferdig og god utdanning og fremme muligheter for livslang læring for alle</p>  
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
-
+  
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
         </div>
         </div>
         </div>
@@ -101,12 +103,13 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
-
+  
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
         </div>
         </div>
         </div>
@@ -122,12 +125,13 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
-
+  
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
         </div>
         </div>
         </div>
@@ -143,12 +147,13 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
 
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+
         </div>
         </div>
         </div>
@@ -164,12 +169,13 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
-
+  
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
         </div>
         </div>
         </div>
@@ -185,12 +191,13 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
-
+  
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
         </div>
         </div>
         </div>
@@ -206,12 +213,13 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
-
+  
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
         </div>
         </div>
         </div>
@@ -227,12 +235,13 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
+        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
-
+  
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
         </div>
         </div>
         </div>
@@ -248,125 +257,131 @@ export default function Baekraftsliste({appState, setAppState}){
         </div>
         <div class="buttonscontainer">
         <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
-        </div>
-        <div class="buttonspace2">
-
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
-        </div>
-        </div>
-        </div>
-      )
-    case 13:
-      return(
-        <div>
-        <div class="malbeskrivelse">
-        <h2>FNs Bærekraftsmål og forklaring</h2>
-        <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <h3>13. Stoppe klimaendringene</h3>
-        <p>Handle umiddelbart for å bekjempe klimaendringene og konsekvensene av dem (Basert på en erkjennelse av 
-        at FNs rammekonvensjon om klimaendring er det viktigste internasjonale og mellomstatlige forumet for 
-        forhandlinger om globale tiltak mot klimaendringer.)</p>
-        </div>
-        <div class="buttonscontainer">
-        <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
-        </div>
-        <div class="buttonspace2">
-
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
-        </div>
-        </div>
-        </div>
-      )
-    case 14:
-      return(
-        <div>
-        <div class="malbeskrivelse">
-        <h2>FNs Bærekraftsmål og forklaring</h2>
-        <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <h3>14. Livet i havet</h3>
-        <p>Bevare og bruke havet og de marine ressursene på en måte som fremmer bærekraftig utvikling</p>
-        </div>
-        <div class="buttonscontainer">
-        <div class="buttonspace1">
-        
+  
         <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
         </div>
         <div class="buttonspace2">
-
+  
         <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+  
         </div>
         </div>
         </div>
       )
-    case 15:
-      return(
-        <div>
-        <div class="malbeskrivelse">
-        <h2>FNs Bærekraftsmål og forklaring</h2>
-        <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <h3>15. Livet på Land</h3>
-        <p>Beskytte, gjenopprette og fremme bærekraftig bruk av økosystemer, sikre bærekraftig skogforvaltning, 
-          bekjempe ørkenspredning, stanse og reversere landforringelse samt stanse tap av artsmangfold</p>
-        </div>
-        <div class="buttonscontainer">
-        <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
-        </div>
-        <div class="buttonspace2">
-
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
-        </div>
-        </div>
-        </div>
-      )
-    case 16:
-      return(
-        <div>
-        <div class="malbeskrivelse">
-        <h2>FNs Bærekraftsmål og forklaring</h2>
-        <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <h3>16. Fred, Rettferdighet og Velfungerende Institusjoner</h3>
-        <p>Fremme fredelige og inkluderende samfunn for å sikre bærekraftig utvikling, sørge for 
-          tilgang til rettsvern for alle, og bygge velfungerende, ansvarlige og inkluderende institusjoner på alle nivåer</p>
-        </div>
-        <div class="buttonscontainer">
-        <div class="buttonspace1">
-        
-        <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
-        </div>
-        <div class="buttonspace2">
-
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
-        </div>
-        </div>
-        </div>
-      )
-    case 17:
-      return(
-        <div>
-        <div class="malbeskrivelse">
-        <h2>FNs Bærekraftsmål og forklaring</h2>
-        <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <h3>17. Samarbeid For å nå Målene</h3>
-        <p>Styrke virkemidlene som trengs for å gjennomføre arbeidet, og fornye globale partnerskap for bærekraftig utvikling</p>
-        </div>
-        <div class="buttonscontainer">
-        <div class="buttonspace1">
-        
-        <TilbakeKnapp set1={true} appState={appState} setAppState={setAppState} />
-        </div>
-        <div class="buttonspace2">
-
-        <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
-        </div>
-        </div>
-        </div>
-      )
+      case 13:
+        return(
+          <div>
+          <div class="malbeskrivelse">
+          <h2>FNs Bærekraftsmål og forklaring</h2>
+          <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
+          <h3>13. Stoppe klimaendringene</h3>
+          <p>Handle umiddelbart for å bekjempe klimaendringene og konsekvensene av dem (Basert på en erkjennelse av 
+          at FNs rammekonvensjon om klimaendring er det viktigste internasjonale og mellomstatlige forumet for 
+          forhandlinger om globale tiltak mot klimaendringer.)</p>
+          </div>
+          <div class="buttonscontainer">
+          <div class="buttonspace1">
+    
+          <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
+          </div>
+          <div class="buttonspace2">
+    
+          <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+    
+          </div>
+          </div>
+          </div>
+        )
+      case 14:
+        return(
+          <div>
+          <div class="malbeskrivelse">
+          <h2>FNs Bærekraftsmål og forklaring</h2>
+          <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
+          <h3>14. Livet i havet</h3>
+          <p>Bevare og bruke havet og de marine ressursene på en måte som fremmer bærekraftig utvikling</p>
+          </div>
+          <div class="buttonscontainer">
+          <div class="buttonspace1">
+    
+          <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
+          </div>
+          <div class="buttonspace2">
+    
+          <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+    
+          </div>
+          </div>
+          </div>
+        )
+      case 15:
+        return(
+          <div>
+          <div class="malbeskrivelse">
+          <h2>FNs Bærekraftsmål og forklaring</h2>
+          <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
+          <h3>15. Livet på Land</h3>
+          <p>Beskytte, gjenopprette og fremme bærekraftig bruk av økosystemer, sikre bærekraftig skogforvaltning, 
+            bekjempe ørkenspredning, stanse og reversere landforringelse samt stanse tap av artsmangfold</p>
+          </div>
+          <div class="buttonscontainer">
+          <div class="buttonspace1">
+    
+          <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
+          </div>
+          <div class="buttonspace2">
+    
+          <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+    
+          </div>
+          </div>
+          </div>
+        )
+      case 16:
+        return(
+          <div>
+          <div class="malbeskrivelse">
+          <h2>FNs Bærekraftsmål og forklaring</h2>
+          <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
+          <h3>16. Fred, Rettferdighet og Velfungerende Institusjoner</h3>
+          <p>Fremme fredelige og inkluderende samfunn for å sikre bærekraftig utvikling, sørge for 
+            tilgang til rettsvern for alle, og bygge velfungerende, ansvarlige og inkluderende institusjoner på alle nivåer</p>
+          </div>
+          <div class="buttonscontainer">
+          <div class="buttonspace1">
+    
+          <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
+          </div>
+          <div class="buttonspace2">
+    
+          <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+    
+          </div>
+          </div>
+          </div>
+        )
+        case 17:
+          return(
+            <div>
+            <div class="malbeskrivelse">
+            <h2>FNs Bærekraftsmål og forklaring</h2>
+            <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
+            <h3>17. Samarbeid For å nå Målene</h3>
+            <p>Styrke virkemidlene som trengs for å gjennomføre arbeidet, og fornye globale partnerskap for bærekraftig utvikling</p> 
+            </div>
+            <div class="buttonscontainer">
+            <div class="buttonspace1">
+      
+            <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
+            </div>
+            <div class="buttonspace2">
+      
+            <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
+      
+            </div>
+            </div>
+            </div>
+          )
   }
 }
 

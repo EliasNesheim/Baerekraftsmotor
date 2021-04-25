@@ -8,8 +8,8 @@ import PageOneAndAHalf from "./components/PageOneAndAHalf";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import { Button, Container, Row, Col } from "react-bootstrap";
-import { nace } from './components/Nace.js'
 import Baekraftsliste from "./components/Baerekraftsliste";
+import { nace } from './components/Nace.js'
 
 
 const axios = require('axios');
@@ -22,6 +22,7 @@ function App() {
   const [OrgNr, setOrgNr] = useState(null);
   const [generateRapport, setGenerateRapport] = useState(null);
   const [appState, setAppState] = useState(0);
+  const [bkListeState, setBkListeState] = useState(1);
   const [naceKode, setNaceKode] = useState(null);
   const [postData, setPost] = useState("");
   const [Answers, setAnswers] = useState({[0]:3,[1]:3,});
@@ -104,7 +105,7 @@ function App() {
               exit={{ y: "-100vh"}}
               >
               <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
-              <Baekraftsliste/>
+              {/*<Baekraftsliste appState={appState} setAppState={setAppState}/>*/}
             </motion.div>
             }
           </AnimatePresence>
