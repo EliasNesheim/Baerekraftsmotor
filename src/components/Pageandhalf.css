@@ -24,7 +24,7 @@
    height:auto;
    padding:11%;
    padding-top:11%; 
-   font-size: 28px;
+   font-size: 30px;
 }
  /* Question 4 page styling */ 
 .Question3 {
@@ -41,7 +41,7 @@
    width:100%;
    height:auto;
    padding:11%;
-   padding-top:9%; 
+   padding-top:8%; 
    font-size: 30px;
 }
  /* Question 6 page styling */ 
@@ -50,6 +50,7 @@
    width:100%;
    height:auto;
    padding:11%;
+   padding-top:11%;
    font-size: 30px;
 }
  /* Question 7 page styling */ 
@@ -58,6 +59,7 @@
    width:100%;
    height:auto;
    padding:11%;
+   padding-top:8%;
    font-size: 30px;
 }
  /* Question 8 page styling */ 
@@ -74,6 +76,7 @@
    width:100%;
    height:auto;
    padding:11%; 
+   padding-top:8%;
    font-size: 30px;
 }
  /* Question 10 page styling */ 
@@ -91,6 +94,7 @@
    width:100%;
    height:auto;
    padding:11%;
+   padding-top:8%;
    font-size: 30px;
 }
  /* Question 12 page styling */ 
@@ -138,23 +142,31 @@
 .Homepagestyling{
    padding-bottom: 476px;
    background-color: #F2F2F2;  
+  
 /*background-image: url("./pride.png"); */ 
 }
+
+
+
+
 /* Adds space to the buttons*/ 
 .sidebyside1{
    width:50%;
+  
 }
+
 .sidebyside2{
    width:50%;
    margin-top:35px;
+  
 /*background-image: url("./pride.png"); */
 }
-
+html { overflow-y: scroll; }
  /* Colors the background of the website */ 
 .body
 {
    background-color: #F2F2F2;
-
+   position: absolute;
 }
  /* Specificy the width of the slider */ 
 .card
@@ -371,9 +383,10 @@ font-size: 23px;
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:16%;
+   padding:15%;
    padding-bottom: 60%;
-   font-size: 17px;
+   padding-top:19%; 
+   font-size: 15px;
    
 }
 .Question3 {
