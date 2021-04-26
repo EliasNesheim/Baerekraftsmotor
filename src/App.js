@@ -6,7 +6,7 @@ import PageOne from "./components/PageOne";
 import PageTwoTwo from "./components/PageTwoTwo";
 import PageOneAndAHalf from "./components/PageOneAndAHalf";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
-import ProgressBar from 'react-bootstrap/ProgressBar'
+import ProgressBar from "react-bootstrap/ProgressBar";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import Baekraftsliste from "./components/Baerekraftsliste";
 import { nace } from './components/Nace.js'
@@ -105,7 +105,7 @@ function App() {
               exit={{ y: "-100vh"}}
               >
               <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
-              {/*<Baekraftsliste appState={appState} setAppState={setAppState}/>*/}
+              <Baekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
             </motion.div>
             }
           </AnimatePresence>
