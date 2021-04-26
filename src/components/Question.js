@@ -41,7 +41,7 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
                     <Form.Group as={Row}>
                         {// slideren
                         }
-                        <div class="slider">
+                        <div className="slider">
                         <Col xs="7">
                             <RangeSlider
                                 value={value}

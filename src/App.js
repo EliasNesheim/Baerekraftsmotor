@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import './css/App.css';
-import PageOne from "./components/PageOne";
-import PageTwoTwo from "./components/PageTwoTwo";
-import PageOneAndAHalf from "./components/PageOneAndAHalf";
+import Home from "./components/Home";
+import Graphs from "./components/Graphs";
+import Questions from "./components/Questions";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import { Button, Container, Row, Col } from "react-bootstrap";
 
-import { nace } from './components/Nace.js'
+import { NaceFunction } from "./components/NaceFunction";
 
 
 const axios = require('axios');
@@ -50,8 +50,8 @@ function App() {
         var naceMainKode = naceKode;
         naceMainKode = naceMainKode.slice(1,3)
         console.log(naceMainKode);
-        console.log(nace(naceMainKode));
-        var ng = nace(naceMainKode);
+        console.log(NaceFunction(naceMainKode));
+        var ng = NaceFunction(naceMainKode);
         var HeleURL =(url+"sms="+sms+"&bnavn="+bnavn+"&orgnr="+orgnr+"&ng="+ng);
         console.log(HeleURL);
 
@@ -103,7 +103,7 @@ function App() {
               animate={{ y: 0}}
               exit={{ y: "-100vh"}}
               >
-              <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
+              <Home OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
               
             </motion.div>
             }
@@ -118,7 +118,7 @@ function App() {
               exit={{ y: "+100vh"}}
               >
               
-                <PageOneAndAHalf appState={appState} setAppState={setAppState} Answers={Answers} setAnswers={setAnswers} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} />
+                <Questions appState={appState} setAppState={setAppState} Answers={Answers} setAnswers={setAnswers} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} />
               </motion.div>
             }
           </AnimatePresence>
@@ -131,7 +131,7 @@ function App() {
               
               exit={{ y: "+100vh"}}
               >
-                <PageTwoTwo naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} Answers={Answers} sessionMs={sessionMs}/>
+                <Graphs naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} Answers={Answers} sessionMs={sessionMs}/>
               </motion.div>
             }
           </AnimatePresence>
