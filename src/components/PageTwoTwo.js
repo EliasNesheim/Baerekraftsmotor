@@ -87,10 +87,13 @@ export default function PageTwo({ naceKode, appState, setAppState, postData, set
     var values = [sumcol1, sumcol2, sumcol3, sumcol4, sumrow1, sumrow2, sumrow3];
     console.log(values);
     return(
-        <div>
-              
+        <div class="pagetwocss">
+           <div class="h1Pagetwo">
             <h1>{postData}</h1>
+            </div>   
+            <div class="h2Pagetwo">
             <h2>Næring: {Næring}</h2>
+            </div>
             {Mål.map(post => (
                 <li key={post.id}>FN mål <b>{post.BK_navn} </b> har en vekting på : {post.poeng}</li>
             ))}

@@ -3,16 +3,18 @@
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
+   padding:11%;
    font-size: 30px;
-   
+ /*   background-image: url("./pride.png");*/ 
+ /*  color:red; */ 
 }
  /* Question 2 page styling */ 
 .Question1 {
    background-color:#F2F2F2;
    width:100%;
    height:auto;
-   padding:15%;
+   padding:11%;
+   padding-top:8%; 
    font-size: 30px;
 }
  /* Question 3 page styling */ 
@@ -20,8 +22,8 @@
    background-color:#F2F2F2;
    width:100%;
    height:auto;
-   padding:15%;
-   padding-top:18%;
+   padding:11%;
+   padding-top:11%; 
    font-size: 28px;
 }
  /* Question 4 page styling */ 
@@ -29,7 +31,8 @@
    background-color:#F2F2F2;
    width:100%;
    height:auto;
-   padding:15%;
+   padding:11%;
+   padding-top:11%; 
    font-size: 30px;
 }
  /* Question 5 page styling */ 
@@ -37,7 +40,8 @@
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
+   padding:11%;
+   padding-top:9%; 
    font-size: 30px;
 }
  /* Question 6 page styling */ 
@@ -45,8 +49,7 @@
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
-   padding-top:18%;
+   padding:11%;
    font-size: 30px;
 }
  /* Question 7 page styling */ 
@@ -54,7 +57,7 @@
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
+   padding:11%;
    font-size: 30px;
 }
  /* Question 8 page styling */ 
@@ -62,7 +65,7 @@
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
+   padding:11%;
    font-size: 30px;
 }
  /* Question 9 page styling */ 
@@ -70,7 +73,7 @@
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
+   padding:11%; 
    font-size: 30px;
 }
  /* Question 10 page styling */ 
@@ -78,7 +81,8 @@
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
+   padding:11%;
+   padding-top:8%;
    font-size: 30px;
 }
  /* Question 11 page styling */ 
@@ -86,7 +90,7 @@
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
+   padding:11%;
    font-size: 30px;
 }
  /* Question 12 page styling */ 
@@ -94,7 +98,7 @@
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
+   padding:11%;
    font-size: 30px;
 }
 
@@ -127,34 +131,35 @@
    margin-top:3px;
 }
 .buttonspace2{
-margin-top: 3px;
-margin-left:40px;
+   margin-top: 3px;
+   margin-left:40px;
    }
  /* Adds color to the homepage */ 
 .Homepagestyling{
-padding-bottom: 476px;
-background-color: #F2F2F2;  
+   padding-bottom: 476px;
+   background-color: #F2F2F2;  
+/*background-image: url("./pride.png"); */ 
 }
 /* Adds space to the buttons*/ 
 .sidebyside1{
-width:50%;
-
+   width:50%;
 }
 .sidebyside2{
-width:50%;
-margin-top:70px;
+   width:50%;
+   margin-top:35px;
+/*background-image: url("./pride.png"); */
 }
 
  /* Colors the background of the website */ 
 .body
 {
-background-color: #F2F2F2;
+   background-color: #F2F2F2;
 
 }
  /* Specificy the width of the slider */ 
 .card
 {
-width: 70%;   
+   width: 70%;   
 }
  /* Adds color to the navbar */ 
 .Farger {
@@ -164,8 +169,8 @@ width: 70%;
 }
  /* Adds color to the buttons */ 
 .btn{
-background-color: #3CB371;
-border-color: #3CB371 ;
+   background-color: #3CB371;
+   border-color: #3CB371 ;
 }
  /* Adds color to the buttons when hovering */ 
 .btn:hover {
@@ -340,7 +345,7 @@ border-color: #3CB371 ;
 }
  /* Styling the homepage for mobile screens*/ 
 .Tittelhovedside{
-font-size: 30px;   
+font-size: 23px;   
 }
  /* Styling the questions for mobile screens*/ 
 .Question {
@@ -348,106 +353,131 @@ font-size: 30px;
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+   
+  
 }
 .Question1 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+   
 }
 .Question2 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding:16%;
+   padding-bottom: 60%;
+   font-size: 17px;
+   
 }
 .Question3 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+   
 }
 .Question4 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+  
 }
 .Question5 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+   
 }
 .Question6 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+   
 }
 .Question7 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+  
 }
 .Question8 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+   
 }
 .Question9 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+   
 }
 .Question10 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+ 
 }
 .Question11 {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
    padding:15%;
-   font-size: 30px;
-   display: flex;
+   padding-bottom: 60%;
+   font-size: 15px;
+   
 }
-
+.pagetwocss {
+   font-size: 11px;
+}
+.h1, h1{
+   font-size: 1.5rem;
+}
+.h2, h2{
+   font-size: 1rem;
+}
+.sidebyside2{
+   margin-top:5px;
+}
+button, input
+{
+   margin-left:-16px;
+}
  /* Styling the slider for mobile screens*/ 
 .slider{
    width:100%;
    margin-left: 20%;
  }
 
- .body{
-   display: flex;
- }
 
 }
