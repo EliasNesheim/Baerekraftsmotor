@@ -32,7 +32,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
         case 2:
             setAnswerKey(1);
             return(
-                <div className="Question">
+                <div className="Question1">
                 <div>
                 <Question QType={"Skala"} QText={"I hvor stor grad vil leverandørene bli utsatt for lovendringer som kan påvirke forsyningene negativt de nærmeste tre årene?"}
                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -114,7 +114,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
         case 5:
             setAnswerKey(4);
             return(
-                <div className="Question">
+                <div className="Question1">
                 <div>
                     <Question QType={"Skala"} QText={"I hvor stor grad vil bedriftens drift bli påvirket av kommende lovendringer i forbindelse med det grønne skifte?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
@@ -161,7 +161,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
         case 7:
             setAnswerKey(6);
             return(
-                <div className="Question">
+                <div className="Question1">
                 <div>
                              <Question QType={"Skala"} QText={"I hvor stor grad baseres bedriftens produkt eller tjeneste på det som vil bli knappe ressurser om fem år?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
@@ -209,7 +209,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
         case 9:
             setAnswerKey(8);
             return(
-                <div class="Question">
+                <div class="Question1">
                 <div>
                             <Question QType={"Skala"} QText={"I hvor stor grad vil kundene deres endre krav og forventninger til deres produkt de neste fem årene?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
@@ -233,7 +233,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
         case 10:
             setAnswerKey(9);
             return(
-                <div class="Question">
+                <div class="Question1">
                 <div>
                        <Question QType={"Skala"} QText={"I hvor stor grad vil ressursene som skaper lønnsomhet kunne påvirke forretningsmodellen til din bedrift?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
@@ -257,7 +257,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
         case 11:
             setAnswerKey(10);
             return(
-                <div class="Question">
+                <div class="Question1">
                 <div>
                        <Question QType={"Skala"} QText={"I hvor stor grad vil fremtidige lovendringer og reguleringer kunne påvirke verdiskapingen i din bedrift?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
