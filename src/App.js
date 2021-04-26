@@ -104,11 +104,11 @@ function App() {
               animate={{ y: 0}}
               exit={{ y: "-100vh"}}
               >            
-              <div class="containers">
-              <div class="sidebyside1">
+              <div className="containers">
+              <div className="sidebyside1">
                 <Home />
                 </div>
-                <div class="sidebyside2">
+                <div className="sidebyside2">
               <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
               </div>
           </div> 

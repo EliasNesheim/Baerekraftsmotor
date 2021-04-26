@@ -10,7 +10,7 @@ export default function Home(){ //Defines Home function used in App.js
           <title>Bærekraftsmotor </title> 
       
         <div className="Homepagestyling">
-            <h1 class="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+            <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
             <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
 
  
