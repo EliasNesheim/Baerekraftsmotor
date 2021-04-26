@@ -4,6 +4,7 @@
    width:100%;
    height:auto;
    padding:11%;
+   padding-top:11%;
    font-size: 30px;
   /*background-image: url("./Pride.png");*/ 
  /*  color:red; */ 
@@ -13,9 +14,10 @@
    background-color:#F2F2F2;
    width:100%;
    height:auto;
-   padding:11%;
-   padding-top:8%; 
-   font-size: 30px;
+   padding: 8%;
+   padding-top:13%; 
+   padding-right:5%;
+   font-size: 27px;
 }
  /* Question 3 page styling */ 
 .Question2 {
@@ -138,6 +140,8 @@
    margin-top: 3px;
    margin-left:40px;
    }
+
+
  /* Adds color to the homepage */ 
 .Homepagestyling{
    padding-bottom: 476px;
@@ -366,6 +370,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
  /* background-image: url("./Prideflag.png");*/ 
   
@@ -374,10 +379,12 @@ font-size: 23px;
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
+   padding: -5px;;
+   padding-top:20%; 
+   padding-left:11%;
    padding-bottom: 60%;
    font-size: 15px;
-   
+  
 }
 .Question2 {
    background-color:#F2F2F2; 
@@ -385,7 +392,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
-   padding-top:19%; 
+   padding-top:26%; 
    font-size: 15px;
    
 }
@@ -395,6 +402,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
    
 }
@@ -404,6 +412,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
   
 }
@@ -413,6 +422,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
    
 }
@@ -422,6 +432,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
    
 }
@@ -431,6 +442,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
   
 }
@@ -440,6 +452,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
    
 }
@@ -449,6 +462,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
    
 }
@@ -458,6 +472,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
  
 }
@@ -467,6 +482,7 @@ font-size: 23px;
    height:auto;
    padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
    
 }
