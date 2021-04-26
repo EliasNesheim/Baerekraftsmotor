@@ -10,14 +10,13 @@
  /*  color:red; */ 
 }
  /* Question 2 page styling */ 
-.Question1 {
-   background-color:#F2F2F2;
+ .Question1 {
+   background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding: 8%;
-   padding-top:13%; 
-   padding-right:5%;
-   font-size: 27px;
+   padding:11%;
+   padding-top:8%;
+   font-size: 30px;
 }
  /* Question 3 page styling */ 
 .Question2 {
@@ -379,12 +378,11 @@ font-size: 23px;
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding: -5px;;
-   padding-top:20%; 
-   padding-left:11%;
+   padding:15%;
    padding-bottom: 60%;
+   padding-top:21%; 
    font-size: 15px;
-  
+ 
 }
 .Question2 {
    background-color:#F2F2F2; 

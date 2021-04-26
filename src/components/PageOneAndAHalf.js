@@ -34,7 +34,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
             return(
                 <div className="Question1">
                 <div>
-                <Question QType={"Skala"} QText={"I hvor stor grad vil leverandørene bli utsatt for lovendringer som kan påvirke forsyningene negativt de nærmeste tre årene?"}
+                <Question QType={"Skala"} QText={"I hvor stor grad vil leverandørene bli utsatt for lovendringer som kan påvirke forsyningene negativt de nærmeste tre årene?  "}
                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
                
                
@@ -43,7 +43,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                
                     <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
                     </div>
-                     <div classv="buttonspace2">
+                     <div className="buttonspace2">
 
                     <TilbakeKnapp plusMinus={true} appState={appState} setAppState={setAppState} />
 
