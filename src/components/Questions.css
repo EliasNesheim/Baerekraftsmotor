@@ -1,101 +1,121 @@
-.hello {
+ /* Question 1 page styling */ 
+.Question {
    background-color:#F2F2F2; 
    width:100%;
    height:auto;
-   padding:15%;
-   font-size: 25px;
-   
+   padding:11%;
+   padding-top:11%;
+   font-size: 30px;
+  /*background-image: url("./Pride.png");*/ 
+ /*  color:red; */ 
 }
-.hello1 {
+ /* Question 2 page styling */ 
+ .Question1 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:11%;
+   padding-top:8%;
+   font-size: 30px;
+}
+ /* Question 3 page styling */ 
+.Question2 {
    background-color:#F2F2F2;
    width:100%;
    height:auto;
-   padding:15%;
-   font-size: 24px;
+   padding:11%;
+   padding-top:11%; 
+   font-size: 30px;
 }
-.hello2 {
+ /* Question 4 page styling */ 
+.Question3 {
    background-color:#F2F2F2;
    width:100%;
    height:auto;
-   padding:15%;
-   font-size: 25px;
+   padding:11%;
+   padding-top:11%; 
+   font-size: 30px;
+}
+ /* Question 5 page styling */ 
+.Question4 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:11%;
+   padding-top:8%; 
+   font-size: 30px;
+}
+ /* Question 6 page styling */ 
+.Question5 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:11%;
+   padding-top:11%;
+   font-size: 30px;
+}
+ /* Question 7 page styling */ 
+.Question6 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:11%;
+   padding-top:8%;
+   font-size: 30px;
+}
+ /* Question 8 page styling */ 
+.Question7 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:11%;
+   font-size: 30px;
+}
+ /* Question 9 page styling */ 
+.Question8 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:11%; 
+   padding-top:8%;
+   font-size: 30px;
+}
+ /* Question 10 page styling */ 
+.Question9 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:11%;
+   padding-top:8%;
+   font-size: 30px;
+}
+ /* Question 11 page styling */ 
+.Question10 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:11%;
+   padding-top:8%;
+   font-size: 30px;
+}
+ /* Question 12 page styling */ 
+.Question11 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:11%;
+   font-size: 30px;
 }
 
-.hello3 {
-   background-color:#F2F2F2;
-   width:100%;
-   height:auto;
-   padding:15%;
-   font-size: 25px;
-}
-
-.hello4 {
-   background-color:#F2F2F2; 
-   width:100%;
-   height:auto;
-   padding:15%;
-   font-size: 25px;
-}
-.hello5 {
-   background-color:#F2F2F2; 
-   width:100%;
-   height:auto;
-   padding:15%;
-   font-size: 25px;
-}
-
-.hello6 {
-   background-color:#F2F2F2; 
-   width:100%;
-   height:auto;
-   padding:15%;
-   font-size: 25px;
-}
-.hello7 {
-   background-color:#F2F2F2; 
-   width:100%;
-   height:auto;
-   padding:15%;
-   font-size: 25px;
-}
-.hello8 {
-   background-color:#F2F2F2; 
-   width:100%;
-   height:auto;
-   padding:15%;
-   font-size: 25px;
-}
-.hello9 {
-   background-color:#F2F2F2; 
-   width:100%;
-   height:auto;
-   padding:15%;
-   font-size: 25px;
-}
-.hello10 {
-   background-color:#F2F2F2; 
-   width:100%;
-   height:auto;
-   padding:15%;
-   font-size: 25px;
-}
-.hello11 {
-   background-color:#F2F2F2; 
-   width:100%;
-   height:auto;
-   padding:15%;
-   font-size: 25px;
-}
-
-
+ /* PageOne home styling to make the homepage have text side by side the other function */ 
 .containers{
-display:flex;
-flex-direction: row;
-background-color: #F2F2F2;
+   display:flex;
+   flex-direction: row;
+   background-color: #F2F2F2;
 }
-
+ /* Styling to show how far the user has come in the questionaire*/ 
 .progress-bar{
-   background-color: #1a8a16; 
+   background-color: #3CB371; 
    border: 1px solid rgba(255, 255, 255, 1); 
    border-radius: 15px; 
    height: 16px;
@@ -103,68 +123,102 @@ background-color: #F2F2F2;
    margin-bottom: 0px;
 
 }
-
+ /* Css to have the buttons side by side */ 
 .buttonscontainer{
    display:flex;
    flex-direction: row;
    }
-.cr{
-margin-bottom: 9px;
-}
-   
+
+ /* Adds space between the buttons on PageOneAndAhalf */ 
 .buttonspace1{
 
-width:56%;
-margin-top:3px;
+   width:56%;
+   margin-top:3px;
 }
 .buttonspace2{
-margin-top: 3px;
-margin-left:40px;
+   margin-top: 3px;
+   margin-left:40px;
    }
 
-.jumbotron{
-padding-bottom: 311px;
-background-color: #F2F2F2;  
-}
-   
-.rowing1{
-width:50%;
 
-}
-.rowing2{
-width:50%;
-margin-top:70px;
+ /* Adds color to the homepage */ 
+.Homepagestyling{
+   padding-bottom: 476px;
+   background-color: #F2F2F2;  
+  
+/*background-image: url("./Pride.png"); */ 
 }
 
 
+
+
+/* Adds space to the buttons*/ 
+.sidebyside1{
+   width:50%;
+  
+}
+
+.sidebyside2{
+   width:50%;
+   margin-top:35px;
+  
+/*background-image: url("./Pride.png"); */
+}
+html { overflow-y: scroll; }
+ /* Colors the background of the website */ 
 .body
 {
-background-color: #F2F2F2;
+   background-color: #F2F2F2;
+   position: absolute;
 }
-
+ /* Specificy the width of the slider */ 
 .card
 {
-width: 70%;   
+   width: 70%;   
 }
-
+ /* Adds color to the navbar */ 
 .Farger {
    background-color:#ACCF71;
    padding-top: 5px;
    padding-bottom: 5px;
 }
-
+ /* Adds color to the buttons */ 
 .btn{
-background-color: #3CB371;
+   background-color: #3CB371;
+   border-color: #3CB371 ;
 }
-
+ /* Adds color to the buttons when hovering */ 
+.btn:hover {
+   background-color: #36b46f;
+}
+ /* Adds color to the buttons when not hovering */ 
+.btn:focus{
+   background-color: #36b46f;
+}
+ /* Positions the slider */ 
 .slider{
    width:100%;
    margin-left: 300px;
    padding-top:5%;
+   height: 30%;
+
  }
-
-
-
+ /* Positions the slider */ 
+.range-slider--primary{
+   height: 80px;
+}
+ /* Styling the slider */ 
+.range-slider {
+   margin-top: 40px;
+   -webkit-appearance: none;
+   width: 100%;
+   height: 30px;
+   border-radius: 30px;
+   background: #d3d3d3;
+   outline: none;
+ }
+ 
+ /* Styling the navbar*/ 
 .NavbarItems {
    background: #ACCF71;
    height: 80px;
@@ -173,7 +227,7 @@ background-color: #3CB371;
    align-items: center;
    font-size: 1.2rem;
 }
-
+ /* Styling the logos*/ 
 .navbar-logo {
    color: #fff;
    justify-self: start;
@@ -181,11 +235,8 @@ background-color: #3CB371;
    cursor: pointer;
 }
 
-/*.fa-react {
-   margin-left: 0.5rem;
-   font-size: 1.6rem;
-}*/
 
+ /* Styling the navbar*/ 
 .nav-menu {
    margin-top: 5px;
    display: grid;
@@ -197,13 +248,13 @@ background-color: #3CB371;
    justify-content: end;
    margin-right: 2rem;
 }
-
+ /* Styling the navbar*/ 
 .nav-links {
    color: rgb(0,0,0);
    text-decoration: none;
    padding: 0.5rem 1rem;
 }
-
+ /* Styling the navbar when hovering*/ 
 .nav-links:hover {
    background-color: #f2f2f2;
    border-radius: 4px;
@@ -223,11 +274,13 @@ background-color: #3CB371;
 }
 
 
-
+ /* Styling for mobile screens*/ 
 @media screen and (max-width: 960px) {
    .NavbarItems {
       position: relative;
    }
+   
+ /* Styling the navbar for mobile screens*/ 
    .nav-menu {
       display: flex;
       justify-content: center;
@@ -244,7 +297,7 @@ background-color: #3CB371;
 
 
 
-
+ /* Styling the navbar for mobile screens*/ 
   .nav-menu.active {
    background: rgb(255,255,255);
    left: 0;
@@ -252,26 +305,26 @@ background-color: #3CB371;
    transition: all 0.5s ease;
    z-index: 1;
 }
-
+ /* Styling the navbar for mobile screens*/ 
 .nav-links {
    text-align: center;
    padding: 2rem;
    width: 100%;
    display: table;
 }
-
+ /* Styling the navbar for mobile screens*/ 
 .nav-links:hover {
    background-color: #CAEAAC;
    border-radius: 0;
 }
-
+ /* Styling the navbar for mobile screens*/ 
 .navbar-logo {
    position: absolute;
    top: 0;
    left: 0;
    transform: translate(25%, 50%);
 }
-
+ /* Styling the navbar for mobile screens*/ 
 .menu-icon {
    display: block;
    position: absolute;
@@ -281,12 +334,12 @@ background-color: #3CB371;
    font-size: 1.8rem;
    cursor: pointer;
 }
-
+ /* Styling the navbar for mobile screens*/ 
 .fa-times {
    color: #fff;
    font-size: 2rem;
 }
-
+ /* Styling the navbar for mobile screens*/ 
 .nav-links-mobile {
    display: block;
    text-align: center;
@@ -299,23 +352,159 @@ background-color: #3CB371;
    color: #fff;
    font-size: 1.5rem;
 }
-
+ /* Styling the navbar for mobile screens*/ 
 .nav-links-mobile:hover {
    background: #fff;
    color: #ACCF71;
    transition: 250ms;
 }
-
-.Tittel{
-font-size: 30px;   
+ /* Styling the homepage for mobile screens*/ 
+.Tittelhovedside{
+font-size: 23px;   
 }
-.hiding{
-   display: none;
-
+ /* Styling the questions for mobile screens*/ 
+.Question {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+ /* background-image: url("./Prideflag.png");*/ 
+  
 }
+.Question1 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+ 
+}
+.Question2 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:26%; 
+   font-size: 15px;
+   
+}
+.Question3 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+   
+}
+.Question4 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+  
+}
+.Question5 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+   
+}
+.Question6 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+   
+}
+.Question7 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+  
+}
+.Question8 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+   
+}
+.Question9 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+   
+}
+.Question10 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+ 
+}
+.Question11 {
+   background-color:#F2F2F2; 
+   width:100%;
+   height:auto;
+   padding:15%;
+   padding-bottom: 60%;
+   padding-top:21%; 
+   font-size: 15px;
+   
+}
+.pagetwocss {
+   font-size: 11px;
+}
+.h1, h1{
+   font-size: 1.5rem;
+}
+.h2, h2{
+   font-size: 1rem;
+}
+.sidebyside2{
+   margin-top:5px;
+}
+button, input
+{
+   margin-left:-16px;
+}
+ /* Styling the slider for mobile screens*/ 
 .slider{
    width:100%;
-   margin-left: 100px;
+   margin-left: 20%;
  }
+
 
 }
