@@ -7,6 +7,56 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
     case 1:
       return(
         <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
+<div>
+             <div class="malbeskrivelse">
+             <h2>FNs Bærekraftsmål og forklaring</h2>
+             <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
+             <h3>1. Utryde Fattigdom</h3>
+             <p>Utrydde alle former for fattigdom i hele verden </p>
+             </div>
+             <div class="buttonscontainer">
+             <div class="buttonspace1">
+     
+             <BKKnapp set17={true} bkListeState={bkListeState} setBkListeState={setBkListeState} />
+             </div>
+             <div class="buttonspace2">
+     
+             <BKKnapp plusMinus={true} bkListeState={bkListeState} setBkListeState={setBkListeState} />
+     
+             </div>
+             </div>
+             </div>
+             </div>
+
+      </div>
+      
+
+           )
+        
+    case 2:
+      return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
+        <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
         <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
@@ -25,9 +75,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 2:
+    case 3:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -47,9 +110,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 3:
+    case 4:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -69,9 +145,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 4:
+    case 5:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -91,9 +180,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 5:
+    case 6:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -113,9 +215,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 6:
+    case 7:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -135,9 +250,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 7:
+    case 8:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -157,9 +285,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 8:
+    case 9:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -179,9 +320,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 9:
+    case 10:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -201,9 +355,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 10:
+    case 11:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -223,9 +390,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 11:
+    case 12:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -245,9 +425,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-    case 12:
+    case 13:
       return(
+        <div>
+        <meta charSet="utf-8" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bærekraftsmotor </title> 
+    
+      <div className="Homepagestyling">
+          <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+          <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+
+<p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+<p><a href="https://simpact.no/"> https://simpact.no/</a></p>
         <div>
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -267,9 +460,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         </div>
         </div>
         </div>
+        </div>
+        </div>
       )
-      case 13:
+      case 14:
         return(
+          <div>
+          <meta charSet="utf-8" />  
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <title>Bærekraftsmotor </title> 
+      
+        <div className="Homepagestyling">
+            <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+            <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+  
+  <p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+  <p><a href="https://simpact.no/"> https://simpact.no/</a></p>
           <div>
           <div class="malbeskrivelse">
           <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -291,9 +497,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
           </div>
           </div>
           </div>
+          </div>
+          </div>
         )
-      case 14:
+      case 15:
         return(
+          <div>
+          <meta charSet="utf-8" />  
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <title>Bærekraftsmotor </title> 
+      
+        <div className="Homepagestyling">
+            <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+            <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+  
+  <p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+  <p><a href="https://simpact.no/"> https://simpact.no/</a></p>
           <div>
           <div class="malbeskrivelse">
           <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -313,9 +532,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
           </div>
           </div>
           </div>
+          </div>
+          </div>
         )
-      case 15:
+      case 16:
         return(
+          <div>
+          <meta charSet="utf-8" />  
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <title>Bærekraftsmotor </title> 
+      
+        <div className="Homepagestyling">
+            <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+            <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+  
+  <p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+  <p><a href="https://simpact.no/"> https://simpact.no/</a></p>
           <div>
           <div class="malbeskrivelse">
           <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -336,9 +568,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
           </div>
           </div>
           </div>
+          </div>
+          </div>
         )
-      case 16:
+      case 17:
         return(
+          <div>
+          <meta charSet="utf-8" />  
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <title>Bærekraftsmotor </title> 
+      
+        <div className="Homepagestyling">
+            <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+            <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+  
+  <p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+  <p><a href="https://simpact.no/"> https://simpact.no/</a></p>
           <div>
           <div class="malbeskrivelse">
           <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -359,9 +604,22 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
           </div>
           </div>
           </div>
+          </div>
+          </div>
         )
-        case 17:
+        case 18:
           return(
+            <div>
+            <meta charSet="utf-8" />  
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+            <title>Bærekraftsmotor </title> 
+        
+          <div className="Homepagestyling">
+              <h1 className="Tittelhovedside">Bruk Bærekraftsmotor</h1> 
+              <p>Bærekraftsmotor er en nettside som spør deg eller din bedrift spørsmål om hvor godt dere følger klima målene og kommer med råd for videre utvikling </p> 
+    
+    <p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+    <p><a href="https://simpact.no/"> https://simpact.no/</a></p>
             <div>
             <div class="malbeskrivelse">
             <h2>FNs Bærekraftsmål og forklaring</h2>
@@ -381,6 +639,8 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
             </div>
             </div>
             </div>
+            </div>
+           </div>
           )
   }
 }

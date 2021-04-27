@@ -106,11 +106,15 @@ function App() {
               >            
               <div className="containers">
               <div className="sidebyside1">
-                <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
+             
+             
+              <Baerekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
+            
                 </div>
                 <div className="sidebyside2">
-              <Home />
-              <Baerekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
+                <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
+
+
               </div>
           </div> 
             </motion.div>
