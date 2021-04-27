@@ -21,6 +21,7 @@ function App() {
   const [OrgNr, setOrgNr] = useState(null);
   const [generateRapport, setGenerateRapport] = useState(null);
   const [appState, setAppState] = useState(0);
+  const [bkListeState, setBkListeState] = useState(1);
   const [naceKode, setNaceKode] = useState(null);
   const [postData, setPost] = useState("");
   const [Answers, setAnswers] = useState({[0]:3,[1]:3,});
@@ -108,6 +109,7 @@ function App() {
                 </div>
                 <div className="sidebyside2">
               <Home />
+              <Baekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
               </div>
           </div> 
             </motion.div>

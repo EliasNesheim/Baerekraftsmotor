@@ -52,8 +52,8 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
 
 
 
- </div>
- </div>
+                </div>
+                </div>
             )
             break;
         case 3:
