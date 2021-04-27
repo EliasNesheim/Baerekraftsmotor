@@ -137,8 +137,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
         <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <img src={BkMal6} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-        <h3>6. Rent Vann og God Sanitærforhold</h3>
+        <img src={BkMal6} alt="6. Rent Vann og God Sanitærforhold" width="200"></img>
         <p>Rent vann og gode sanitærforhold</p>
         </div>
         <div class="buttonscontainer">
@@ -160,8 +159,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
         <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <img src={BkMal7} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-        <h3>7. Ren Energi Til Alle</h3>
+        <img src={BkMal7} alt="7. Ren Energi Til Alle" width="200"></img>
         <p>Sikre tilgang til pålitelig, bærekraftig og moderne energi til en overkommelig pris for alle</p>
         </div>
         <div class="buttonscontainer">
@@ -183,8 +181,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
         <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <img src={BkMal8} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-        <h3>8. Anstedig Arbeid og Økonomisk Vekst</h3>
+        <img src={BkMal8} alt="8. Anstedig Arbeid og Økonomisk Vekst" width="200"></img>
         <p>Fremme varig, inkluderende og bærekraftig økonomisk vekst, full sysselsetting og anstendig arbeid for alle</p>
         </div>
         <div class="buttonscontainer">
@@ -206,8 +203,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
         <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <img src={BkMal9} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-        <h3>9. Industri, Innovasjon og Infrastruktur</h3>
+        <img src={BkMal9} alt="9. Industri, Innovasjon og Infrastruktur" width="200"></img>
         <p>Bygge solid infrastruktur og fremme inkluderende og bærekraftig industrialisering og innovasjon</p>
         </div>
         <div class="buttonscontainer">
@@ -229,8 +225,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
         <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <img src={BkMal10} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-        <h3>10. Mindre Ulikhet</h3>
+        <img src={BkMal10} alt="10. Mindre Ulikhet" width="200"></img>
         <p>Redusere ulikhet i og mellom land</p>
         </div>
         <div class="buttonscontainer">
@@ -252,8 +247,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
         <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <img src={BkMal11} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-        <h3>11. Bærekraftige Byer og Lokalsamfun</h3>
+        <img src={BkMal11} alt="11. Bærekraftige Byer og Lokalsamfun" width="200"></img>
         <p>Gjøre byer og lokalsamfunn inkluderende, trygge, robuste og bærekraftige</p>
         </div>
         <div class="buttonscontainer">
@@ -275,8 +269,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
         <div class="malbeskrivelse">
         <h2>FNs Bærekraftsmål og forklaring</h2>
         <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-        <img src={BkMal12} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-        <h3>12. Ansvarlig Forbruk og Produksjon</h3>
+        <img src={BkMal12} alt="12. Ansvarlig Forbruk og Produksjon" width="200"></img>
         <p>Sikre bærekraftig forbruks- og produksjonsmønstre</p>
         </div>
         <div class="buttonscontainer">
@@ -298,8 +291,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
           <div class="malbeskrivelse">
           <h2>FNs Bærekraftsmål og forklaring</h2>
           <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-          <img src={BkMal13} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-          <h3>13. Stoppe klimaendringene</h3>
+          <img src={BkMal13} alt="13. Stoppe klimaendringene" width="200"></img>
           <p>Handle umiddelbart for å bekjempe klimaendringene og konsekvensene av dem (Basert på en erkjennelse av 
           at FNs rammekonvensjon om klimaendring er det viktigste internasjonale og mellomstatlige forumet for 
           forhandlinger om globale tiltak mot klimaendringer.)</p>
@@ -323,8 +315,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
           <div class="malbeskrivelse">
           <h2>FNs Bærekraftsmål og forklaring</h2>
           <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-          <img src={BkMal14} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-          <h3>14. Livet i havet</h3>
+          <img src={BkMal14} alt="14. Livet i havet" width="200"></img>
           <p>Bevare og bruke havet og de marine ressursene på en måte som fremmer bærekraftig utvikling</p>
           </div>
           <div class="buttonscontainer">
@@ -346,8 +337,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
           <div class="malbeskrivelse">
           <h2>FNs Bærekraftsmål og forklaring</h2>
           <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-          <img src={BkMal15} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-          <h3>15. Livet på Land</h3>
+          <img src={BkMal15} alt="15. Livet på Land" width="200"></img>
           <p>Beskytte, gjenopprette og fremme bærekraftig bruk av økosystemer, sikre bærekraftig skogforvaltning, 
             bekjempe ørkenspredning, stanse og reversere landforringelse samt stanse tap av artsmangfold</p>
           </div>
@@ -370,8 +360,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
           <div class="malbeskrivelse">
           <h2>FNs Bærekraftsmål og forklaring</h2>
           <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-          <img src={BkMal16} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-          <h3>16. Fred, Rettferdighet og Velfungerende Institusjoner</h3>
+          <img src={BkMal16} alt="16. Fred, Rettferdighet og Velfungerende Institusjoner" width="200"></img>
           <p>Fremme fredelige og inkluderende samfunn for å sikre bærekraftig utvikling, sørge for 
             tilgang til rettsvern for alle, og bygge velfungerende, ansvarlige og inkluderende institusjoner på alle nivåer</p>
           </div>
@@ -394,8 +383,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
           <div class="malbeskrivelse">
           <h2>FNs Bærekraftsmål og forklaring</h2>
           <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-          <img src={BkMal17} alt="5. Likestilling Mellom Kjønnene" width="200"></img>
-          <h3>17. Samarbeid For å nå Målene</h3>
+          <img src={BkMal17} alt="17. Samarbeid For å nå Målene" width="200"></img>
           <p>Styrke virkemidlene som trengs for å gjennomføre arbeidet, og fornye globale partnerskap for bærekraftig utvikling</p> 
           </div>
           <div class="buttonscontainer">
