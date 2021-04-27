@@ -6,7 +6,7 @@ import AppStateButton from "./AppStateButton";
 import Question from "./Question";
 
 
-export default function PageOneAndAHalf({ appState, setAppState, Answers, setAnswers, AnswerKey, setAnswerKey}){
+export default function Questions({ appState, setAppState, Answers, setAnswers, AnswerKey, setAnswerKey}){
 
     
     switch (appState) {

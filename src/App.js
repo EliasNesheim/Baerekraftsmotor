@@ -2,20 +2,18 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import './css/App.css';
-import PageOne from "./components/PageOne";
-import PageTwoTwo from "./components/PageTwoTwo";
-import PageOneAndAHalf from "./components/PageOneAndAHalf";
 import Home from "./components/Home";
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
-import ProgressBar from 'react-bootstrap/ProgressBar'
-import { Button, Container, Row, Col } from "react-bootstrap";
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import Questions from "./components/Questions"
+import Graphs from "./components/Graphs"
 
 import { NaceFunction } from "./components/NaceFunction";
+import OrgNrLookUp from "./components/OrgNrLookUp";
 
 
 const axios = require('axios');
 
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -106,10 +104,10 @@ function App() {
               >            
               <div className="containers">
               <div className="sidebyside1">
-                <Home />
+                <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
                 </div>
                 <div className="sidebyside2">
-              <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
+              <Home />
               </div>
           </div> 
             </motion.div>

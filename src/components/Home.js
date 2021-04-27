@@ -1,5 +1,5 @@
 import React from "react"; //Imports react
-import "./Pageandhalf.css"; //Imports css
+//import "./Pageandhalf.css"; //Imports css
 import 'bootstrap/dist/css/bootstrap.min.css'; //Imports bootstrap css
 export default function Home(){ //Defines Home function used in App.js
       //Returns the code to the function Home
