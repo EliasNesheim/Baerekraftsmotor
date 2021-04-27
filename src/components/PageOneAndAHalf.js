@@ -15,9 +15,10 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
             setAnswerKey(0);
             return(
                 <div class="hello">
-                    <Question QType={"Skala"} QText={"Hvor stor er risikoen for at ressursene blir knappere i bedriftens leverandørkjede om tre år? "}
-                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
-                    
+                
+                    <Question QType={"Skala"} QText= {"Hvor stor er risikoen for at ressursene blir knappere i bedriftens leverandørkjede om tre år?"}
+                        AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
+            
                     <div class="buttonscontainer">
                         <div class="buttonspace1">
                             <TilbakeKnapp plusMinus={false} appState={appState} setAppState={setAppState} />
@@ -35,7 +36,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div class="hello1">
                 <div>
                 <Question QType={"Skala"} QText={"I hvor stor grad vil leverandørene bli utsatt for lovendringer som kan påvirke forsyningene negativt de nærmeste tre årene?"}
-                AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
+                AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> <br></br>
                
                
                <div class="buttonscontainer">
@@ -64,7 +65,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div>
                     
                 <Question QType={"Skala"} QText={"Hvor opptatt vil bedriftens kunder være av bærekraftig verdikjede      "}
-                AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
+                AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> <br></br>
 
 
 
@@ -92,7 +93,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div class="hello3">
                 <div>
                   <Question QType={"Skala"} QText={"I hvor stor grad er bedriftens drift avhengig av fossile eller ikke-gjennvinnbare ressurser?  "}
-                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> <br></br>
   
 
                      <div class="buttonscontainer">
@@ -117,7 +118,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div class="hello4">
                 <div>
                     <Question QType={"Skala"} QText={"I hvor stor grad vil bedriftens drift bli påvirket av kommende lovendringer i forbindelse med det grønne skifte?  "}
-                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> <br></br>
 
 <                     div class="buttonscontainer">
                      <div class="buttonspace1">
@@ -140,7 +141,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div class="hello5">
                 <div>
                               <Question QType={"Skala"} QText={"I hvor stor grad vil fremtidens forbrukere sette større krav til bedriftens CSR-profil?  "}
-                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> <br></br>
 
 
                     <div class="buttonscontainer">
@@ -164,7 +165,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div class="hello6">
                 <div>
                              <Question QType={"Skala"} QText={"I hvor stor grad baseres bedriftens produkt eller tjeneste på det som vil bli knappe ressurser om fem år?  "}
-                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> <br></br>
     
                     <div class="buttonscontainer">
                      <div class="buttonspace1">
@@ -188,7 +189,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div class="hello7">
                 <div>
                             <Question QType={"Skala"} QText={" I hvor stor grad vil bedriftens produkt(portefølje) bli preget av lovendringer de kommende fem årene?  "}
-                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> <br></br>
     
                 <div class="buttonscontainer">
                 <div class="buttonspace1">
@@ -212,7 +213,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div class="hello8">
                 <div>
                             <Question QType={"Skala"} QText={"I hvor stor grad vil kundene deres endre krav og forventninger til deres produkt de neste fem årene?  "}
-                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> <br></br>
    
                     <div class="buttonscontainer">
                      <div class="buttonspace1">
@@ -236,7 +237,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div class="hello9">
                 <div>
                        <Question QType={"Skala"} QText={"I hvor stor grad vil ressursene som skaper lønnsomhet kunne påvirke forretningsmodellen til din bedrift?  "}
-                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> <br></br>
 
                     <div class="buttonscontainer">
                      <div class="buttonspace1">
@@ -260,7 +261,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div class="hello10">
                 <div>
                        <Question QType={"Skala"} QText={"I hvor stor grad vil fremtidige lovendringer og reguleringer kunne påvirke verdiskapingen i din bedrift?  "}
-                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /><br></br>
 
                     <div class="buttonscontainer">
                      <div class="buttonspace1">
@@ -283,7 +284,7 @@ export default function PageOneAndAHalf({ appState, setAppState, Answers, setAns
                 <div class="hello11">
                 <div>
                                <Question QType={"Skala"} QText={"I hvor stor grad vil nye behov i kundesegmentene påvirke forretningsmodellen i bedriften?  "}
-                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
+                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /><br></br>
 
                     <div class="buttonscontainer">
                      <div class="buttonspace1">

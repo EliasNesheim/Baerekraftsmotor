@@ -35,7 +35,8 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
 
             <div className="Card">
                 <label> {QText}
-                Skala fra 0 – 10, 0 = Ikke viktig, 10= Helt avgjørende </label> <br />
+                Skala fra 0 - 10, 0 = Ikke viktig, 10 = Helt avgjørende? </label> 
+                <br />
                 
                 <Form>
                     <Form.Group as={Row}>

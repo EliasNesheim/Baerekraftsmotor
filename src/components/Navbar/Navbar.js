@@ -13,7 +13,10 @@ class Navbar extends Component {
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">SIMPACT<i className=""></i></h1>
+                <h1 className="navbar-logo"><i className=""></i>
+                    <img src={process.env.PUBLIC_URL + "/logo1.png"} width="192" height="80px" alt="simpactlogo" />
+                </h1>
+                
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
