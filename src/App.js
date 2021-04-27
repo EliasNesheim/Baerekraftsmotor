@@ -7,6 +7,7 @@ import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Questions from "./components/Questions"
 import Graphs from "./components/Graphs"
+import Baerekraftsliste from "./components/Baerekraftsliste"
 
 import { NaceFunction } from "./components/NaceFunction";
 import OrgNrLookUp from "./components/OrgNrLookUp";
@@ -109,7 +110,7 @@ function App() {
                 </div>
                 <div className="sidebyside2">
               <Home />
-              <Baekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
+              <Baerekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
               </div>
           </div> 
             </motion.div>
