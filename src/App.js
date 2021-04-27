@@ -2,19 +2,19 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import './css/App.css';
-import PageOne from "./components/PageOne";
-import PageTwoTwo from "./components/PageTwoTwo";
-import PageOneAndAHalf from "./components/PageOneAndAHalf";
+
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
-import ProgressBar from "react-bootstrap/ProgressBar";
-import { Button, Container, Row, Col } from "react-bootstrap";
-import Baekraftsliste from "./components/Baerekraftsliste";
-import { nace } from './components/Nace.js'
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import Questions from "./components/Questions"
+import Graphs from "./components/Graphs"
+import Baerekraftsliste from "./components/Baerekraftsliste"
+
+import { NaceFunction } from "./components/NaceFunction";
+import OrgNrLookUp from "./components/OrgNrLookUp";
 
 
 const axios = require('axios');
 
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -51,8 +51,8 @@ function App() {
         var naceMainKode = naceKode;
         naceMainKode = naceMainKode.slice(1,3)
         console.log(naceMainKode);
-        console.log(nace(naceMainKode));
-        var ng = nace(naceMainKode);
+        console.log(NaceFunction(naceMainKode));
+        var ng = NaceFunction(naceMainKode);
         var HeleURL =(url+"sms="+sms+"&bnavn="+bnavn+"&orgnr="+orgnr+"&ng="+ng);
         console.log(HeleURL);
 
@@ -103,9 +103,20 @@ function App() {
               initial={{ y: "-100vh"}}
               animate={{ y: 0}}
               exit={{ y: "-100vh"}}
-              >
-              <PageOne OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
-              <Baekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
+              >            
+              <div className="containers">
+              <div className="sidebyside1">
+             
+             
+              <Baerekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
+            
+                </div>
+                <div className="sidebyside2">
+                <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
+
+
+              </div>
+          </div> 
             </motion.div>
             }
           </AnimatePresence>
@@ -119,7 +130,7 @@ function App() {
               exit={{ y: "+100vh"}}
               >
               
-                <PageOneAndAHalf appState={appState} setAppState={setAppState} Answers={Answers} setAnswers={setAnswers} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} />
+                <Questions appState={appState} setAppState={setAppState} Answers={Answers} setAnswers={setAnswers} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} />
               </motion.div>
             }
           </AnimatePresence>
@@ -132,7 +143,7 @@ function App() {
               
               exit={{ y: "+100vh"}}
               >
-                <PageTwoTwo naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} Answers={Answers} sessionMs={sessionMs}/>
+                <Graphs naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} Answers={Answers} sessionMs={sessionMs}/>
               </motion.div>
             }
           </AnimatePresence>
@@ -151,15 +162,4 @@ function App() {
 
 export default App;
 
-/* <Home />
 
-
-        
-        <Qone setOrgNr={setOrgNr} OrgNr={OrgNr}/>
-        {appState == 0 &&
-        <Rapport OrgNr={OrgNr} appState={appState} settAppState={settAppState}/>
-        }
-        {appState == 1 &&
-        <p> hahah</p>
-        }
-        */
