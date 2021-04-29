@@ -33,12 +33,15 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
     if (QType === "Skala") {
         return (
 
-            <div style={{height: "60vh"}}>
+            <div className="sentrer1" style={{height: "60vh"}}>
                 <Row >
-                    <label style={{height: "20vh"}} >{QText}</label>
+              
+                    <label className="sentrer2" style={{height: "20vh"}} >{QText}</label>
+                    
                 </Row>
                 <Row>
-                    <label style={{height: "20vh"}}> 
+
+                    <label className="sentrer3" style={{height: "20vh"}}> 
                     Skala fra 0 – 10, 0 = Ikke viktig, 10= Helt avgjørende
                     </label> <br />
                 </Row>
