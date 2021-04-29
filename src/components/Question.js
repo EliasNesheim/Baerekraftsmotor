@@ -33,10 +33,16 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
     if (QType === "Skala") {
         return (
 
-            <div className="Card">
-                <label> {QText}
-                Skala fra 0 – 10, 0 = Ikke viktig, 10= Helt avgjørende </label> <br />
-                
+            <div className="Card" style={{height: "70%"}}>
+                <Row >
+                    <label style={{height: "20%"}} >{QText}</label>
+                </Row>
+                <Row>
+                    <label> 
+                    Skala fra 0 – 10, 0 = Ikke viktig, 10= Helt avgjørende
+                    </label> <br />
+                </Row>
+                <Row>
                 <Form>
                     <Form.Group as={Row}>
                         {// slideren
@@ -56,7 +62,7 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
                         </div>
                     </Form.Group>
                 </Form>
-
+                </Row>
             </div>
         )
     }   else { return(<p>bug</p>)}
