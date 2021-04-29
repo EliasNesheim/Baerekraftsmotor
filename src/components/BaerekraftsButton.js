@@ -1,29 +1,29 @@
-import React, { useState } from "react";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import Button from 'react-bootstrap/Button';
 
-export default function BærekraftsButton( { plusMinus, set1, set17, bkListeState, setBkListeState } ){
+export default function BærekraftsButton( { plusMinus, bkListeState, setBkListeState } ){
     if (plusMinus === false){
-        if (bkListeState == 1){
+        if (bkListeState === 1){
             return(
-                <Button onClick={() => setBkListeState(17)}>Forrige</Button>
+                <Button variant="outline-success" onClick={() => setBkListeState(17)}>{'<'}</Button>
             )
         }
         else {
             return(
-                <Button onClick={() => setBkListeState(bkListeState - 1)}>Forrige</Button>
+                <Button variant="outline-success" onClick={() => setBkListeState(bkListeState - 1)}>{'<'}</Button>
             )
         }
     }
 
     else if (plusMinus === true){
-        if (bkListeState == 17){
+        if (bkListeState === 17){
             return(
-                <Button onClick={() => setBkListeState(1)}>Neste</Button>
+                <Button variant="outline-success" onClick={() => setBkListeState(1)}>{'>'}</Button>
             )
         }
         else {
             return(
-                <Button onClick={() => setBkListeState(bkListeState + 1)}>Neste</Button>
+                <Button variant="outline-success" onClick={() => setBkListeState(bkListeState + 1)}>{'>'}</Button>
             )
         }
     }

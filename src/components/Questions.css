@@ -1,10 +1,10 @@
  /* Question 1 page styling */ 
 .Question {
-   background-color:#F2F2F2; 
+   background-color: White; 
    width:100%;
-   height:auto;
-   padding:11%;
-   padding-top:8%;
+   height: 80vh;
+   padding:5%;
+   padding-top:5%;
    font-size: 39px;
   /*background-image: url("./Pride.png");*/ 
  /*  color:red; */ 
@@ -142,16 +142,6 @@
    margin-top: 3px;
    margin-left:40px;
    }
-
-
- /* Adds color to the homepage */ 
-.Homepagestyling{
-   
-   background-color: #F2F2F2;  
-  
-/*background-image: url("./Pride.png"); */ 
-}
-
 .sentrer1
 {
    height: "60vh"
@@ -221,15 +211,11 @@ font-size: 20px;
 }
  /* Adds color to the navbar */ 
 .Farger {
-   background-color:#ACCF71;
+   background-color:#77DD77;
    padding-top: 5px;
    padding-bottom: 5px;
 }
  /* Adds color to the buttons */ 
-.btn{
-   background-color: #3CB371;
-   border-color: #3CB371 ;
-}
  /* Adds color to the buttons when hovering */ 
 .btn:hover {
    background-color: #36b46f;
@@ -242,7 +228,6 @@ font-size: 20px;
 .slider{
    height:16vh;
    width:100%;
-   margin-left: 13vh;
    padding-top:5%;
    height: 30%;
 
@@ -255,7 +240,7 @@ font-size: 20px;
 .range-slider {
    margin-top: 40px;
    -webkit-appearance: none;
-   width: 350%;
+   width: 60vw;
    height: 35px;
    border-radius: 30px;
    background: #d3d3d3;
@@ -264,7 +249,7 @@ font-size: 20px;
 
  .range-slider__tooltip__label
 {
-  margin-left: 9vh;
+  margin-left: 0vh;
  
 }
 
@@ -272,7 +257,7 @@ font-size: 20px;
  
  /* Styling the navbar*/ 
 .NavbarItems {
-   background: #ACCF71;
+   background: #77DD77;
    height: 80px;
    display: flex;
    justify-content: center;
@@ -399,7 +384,7 @@ font-size: 20px;
    margin: 2rem auto;
    border-radius: 4px;
    width: 80%;
-   background: #ACCF71;
+   background: #77DD77;
    text-decoration: none;
    color: #fff;
    font-size: 1.5rem;
@@ -407,7 +392,7 @@ font-size: 20px;
  /* Styling the navbar for mobile screens*/ 
 .nav-links-mobile:hover {
    background: #fff;
-   color: #ACCF71;
+   color: #77DD77;
    transition: 250ms;
 }
  /* Styling the homepage for mobile screens*/ 

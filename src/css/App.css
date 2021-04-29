@@ -12,7 +12,7 @@
 .App {
   text-align: center;
   height: 100vh;
-  background-color: #F2F2F2;
+  background-color: white;
 }
 
 .App-logo {
@@ -51,7 +51,7 @@
 }
 
 .malbeskrivelse{
-  border: 4px solid #ACCF71;
+  border: 4px solid #77DD77;
   border-radius: 10px;
   width: 400px;
   display: inline-block;
@@ -64,7 +64,7 @@
 .bkcontainer{
   width: 400px;
   display: inline-block;
-  margin-bottom: 40px;
+  height: 45vh;
 }
 
 .buttonscontainermal{
@@ -98,4 +98,48 @@
 
 .Tittelhovedside div {
   font-weight: bold;
+}
+
+.Simpact-Green {
+  background-color: #77DD77
+}
+
+.Fire-Opal {
+  background-color: #DD614A;
+}
+
+.Middel-Red {
+  background-color: #F48668;
+}
+
+.Vivid-Tangerine {
+  background-color: #F4A698;
+}
+
+.Dark-Jungel-Green {
+  background-color: #0D340D;
+}
+.Dark-Jungel-Green-Text {
+  color: #0D340D;
+}
+.h1{
+  color: #0D340D;
+}
+.h2{
+  color: #0D340D;
+}
+.h3{
+  color: #0D340D;
+}
+
+.GreenBorder {
+  border: 4px solid #77DD77;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.OneThird {
+  height: 30vh;
+  align-items: center;
 }

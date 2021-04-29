@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
 import AppStateButton from "./AppStateButton";
@@ -42,11 +42,6 @@ export default function OrgNrLookUp({ OrgNr, setOrgNr, appState, setAppState, se
           <div>
             <p>Legg inn organisasjonnummer til bedriften du svarer på vegne av: </p>
             <input onChange={handleInput} placeholder="skriv org nummeret ditt"/>
-            <p>
-              Simpact Group er et lite selskap med stor påvirkningskraft. Vår jobb er å hjelpe våre kunder innenfor innovasjon, vekst, forretningsutvikling og omstilling.
-            </p>
-            <p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
-            <p><a href="https://simpact.no/"> https://simpact.no/</a></p>
       </div>
       )
     }
@@ -60,11 +55,7 @@ export default function OrgNrLookUp({ OrgNr, setOrgNr, appState, setAppState, se
             
             <p>Dersom {postData} er riktig selskap, trykk på Videre</p>
             <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
-            <p>
-              Simpact Group er et lite selskap med stor påvirkningskraft. Vår jobb er å hjelpe våre kunder innenfor innovasjon, vekst, forretningsutvikling og omstilling.
-            </p>
-          <p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
-          <p><a href="https://simpact.no/"> https://simpact.no/</a></p>
+            
         </div>
     
     )

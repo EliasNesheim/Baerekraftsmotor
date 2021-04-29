@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Questions.css";
-import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import AppStateButton from "./AppStateButton";
 import Question from "./Question";
+import { Row, Col } from "react-bootstrap";
 
 
 export default function Questions({ appState, setAppState, Answers, setAnswers, AnswerKey, setAnswerKey}){
@@ -13,17 +13,22 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
         case 1:
             setAnswerKey(0);
             return(
-                <div className="Question">
-                    <Question QType={"Skala"} QText={"Hvor stor er risikoen for at ressursene blir knappere i bedriftens leverandørkjede om tre år? "}
-                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
-                    
-                    <div class="buttonscontainer">
-                        <div class="buttonspace1">
-                            <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
-                        </div>
-                            <div class="buttonspace2">
-                            <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
-                        </div>
+                <div className="Container">
+                    <div className="Question">
+                        <Col>
+                            <Row>
+                                <Question QType={"Skala"} QText={"Hvor stor er risikoen for at ressursene blir knappere i bedriftens leverandørkjede om tre år? "}
+                                AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
+                                </Col>
+                                <Col>
+                                    <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
+                                </Col>
+                            </Row>
+                        </Col>
                     </div>
                 </div>
             )
@@ -31,18 +36,16 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
         case 2:
             setAnswerKey(1);
             return(
-                <div className="Question1">
-                <div>
-                <Question QType={"Skala"} QText={"I hvor stor grad vil leverandørene bli utsatt for lovendringer som kan påvirke forsyningene negativt de nærmeste tre årene?  "}
-                AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
-               
-               
-               <div className="buttonscontainer">
-                     <div className="buttonspace1">
+                <div className="Question">
+                    <div>
+                        <Question QType={"Skala"} QText={"I hvor stor grad vil leverandørene bli utsatt for lovendringer som kan påvirke forsyningene negativt de nærmeste tre årene?  "}
+                        AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
+                    <div className="d-flex justify-content-around">
+                     <div >
                
                     <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                     </div>
-                     <div className="buttonspace2">
+                     <div >
 
                     <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
 
@@ -59,7 +62,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
         case 3:
             setAnswerKey(2);
             return(
-                <div className="Question2">
+                <div className="Question">
                 <div>
                     
                 <Question QType={"Skala"} QText={"Hvor opptatt vil bedriftens kunder være av bærekraftig verdikjede      "}
@@ -67,13 +70,13 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
 
 
 
-                    <div className="buttonscontainer">
-                     <div className="buttonspace1">
+                    <div className="d-flex justify-content-around">
+                     <div >
 
 
                     <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                     </div>
-                     <div className="buttonspace2">
+                     <div >
 
                     <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
 
@@ -94,12 +97,12 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
   
 
-                     <div className="buttonscontainer">
-                     <div className="buttonspace1">
+                     <div className="d-flex justify-content-around">
+                     <div >
 
                    <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                    </div>
-                     <div className="buttonspace2">
+                     <div >
 
                    <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                    </div>
@@ -118,11 +121,11 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                     <Question QType={"Skala"} QText={"I hvor stor grad vil bedriftens drift bli påvirket av kommende lovendringer i forbindelse med det grønne skifte?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
 
-<                     div class="buttonscontainer">
-                     <div class="buttonspace1">
+<                     div class="d-flex justify-content-around">
+                     <div>
                 <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                 </div>
-                     <div className="buttonspace2">
+                     <div >
 
                 <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                 </div>
@@ -142,11 +145,11 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
 
 
-                    <div class="buttonscontainer">
-                     <div class="buttonspace1">
+                    <div class="d-flex justify-content-around">
+                     <div>
                 <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                 </div>
-                     <div className="buttonspace2">
+                     <div >
 
                 <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                 </div>
@@ -165,12 +168,12 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                              <Question QType={"Skala"} QText={"I hvor stor grad baseres bedriftens produkt eller tjeneste på det som vil bli knappe ressurser om fem år?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
     
-                    <div className="buttonscontainer">
-                     <div className="buttonspace1">
+                    <div className="d-flex justify-content-around">
+                     <div >
 
                 <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                 </div>
-                     <div className="buttonspace2">
+                     <div >
 
                 <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                 </div>
@@ -189,12 +192,12 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                             <Question QType={"Skala"} QText={" I hvor stor grad vil bedriftens produkt(portefølje) bli preget av lovendringer de kommende fem årene?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
     
-                <div className="buttonscontainer">
-                <div className="buttonspace1">
+                <div className="d-flex justify-content-around">
+                <div >
 
                 <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                 </div>
-                     <div className="buttonspace2">
+                     <div >
 
                 <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                 </div>
@@ -213,12 +216,12 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                             <Question QType={"Skala"} QText={"I hvor stor grad vil kundene deres endre krav og forventninger til deres produkt de neste fem årene?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
    
-                    <div className="buttonscontainer">
-                     <div className="buttonspace1">
+                    <div className="d-flex justify-content-around">
+                     <div >
 
                 <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                 </div>
-                     <div className="buttonspace2">
+                     <div >
 
                 <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                 </div>
@@ -237,12 +240,12 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                        <Question QType={"Skala"} QText={"I hvor stor grad vil ressursene som skaper lønnsomhet kunne påvirke forretningsmodellen til din bedrift?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} /> 
 
-                    <div className="buttonscontainer">
-                     <div className="buttonspace1">
+                    <div className="d-flex justify-content-around">
+                     <div >
 
                 <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                 </div>
-                     <div className="buttonspace2">
+                     <div >
 
                 <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                 </div>
@@ -261,12 +264,12 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                        <Question QType={"Skala"} QText={"I hvor stor grad vil fremtidige lovendringer og reguleringer kunne påvirke verdiskapingen i din bedrift?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
 
-                    <div className="buttonscontainer">
-                     <div className="buttonspace1">
+                    <div className="d-flex justify-content-around">
+                     <div >
 
                 <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                 </div>
-                     <div className="buttonspace2">
+                     <div >
 
                 <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                 </div>
@@ -284,12 +287,12 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                <Question QType={"Skala"} QText={"I hvor stor grad vil nye behov i kundesegmentene påvirke forretningsmodellen i bedriften?  "}
                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
 
-                    <div className="buttonscontainer">
-                     <div className="buttonspace1">
+                    <div className="d-flex justify-content-around">
+                     <div >
 
                 <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                 </div>
-                     <div className="buttonspace2">
+                     <div>
 
                 <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                 </div>
