@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
 
-export default function BKknapp( { plusMinus, set1, set17, bkListeState, setBkListeState } ){
+export default function BærekraftsButton( { plusMinus, set1, set17, bkListeState, setBkListeState } ){
     if (plusMinus === false){
         if (bkListeState == 1){
             return(

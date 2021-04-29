@@ -2,7 +2,7 @@ import React from "react"; //Imports react
 //import "./Pageandhalf.css"; //Imports css
 import 'bootstrap/dist/css/bootstrap.min.css'; //Imports bootstrap css
 import Baekraftsliste from "./Baerekraftsliste";
-import BKKnapp from "./BKKnapp";
+import BaerekraftsButton from "./BaerekraftsButton";
 
 
 export default function Home({bkListeState, setBkListeState} ){ //Defines Home function used in App.js
@@ -29,10 +29,10 @@ export default function Home({bkListeState, setBkListeState} ){ //Defines Home f
                 </div>
                   <div class="buttonscontainer">
                     <div class="buttonspace1">
-                      <BKKnapp plusMinus={false} bkListeState={bkListeState} setBkListeState={setBkListeState} />
+                      <BaerekraftsButton plusMinus={false} bkListeState={bkListeState} setBkListeState={setBkListeState} />
                     </div>
                     <div class="buttonspace2">
-                      <BKKnapp plusMinus={true} bkListeState={bkListeState} setBkListeState={setBkListeState} />
+                      <BaerekraftsButton plusMinus={true} bkListeState={bkListeState} setBkListeState={setBkListeState} />
                     </div>
                   </div>
               </div>

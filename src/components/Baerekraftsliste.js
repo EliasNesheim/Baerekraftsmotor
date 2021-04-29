@@ -1,5 +1,4 @@
 import React from "react";
-import BKKnapp from "./BKKnapp";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import BkMal1 from "./img/bkMal1.png";
