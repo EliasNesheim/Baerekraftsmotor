@@ -102,7 +102,7 @@ export default function Graphs({ naceKode, appState, setAppState, postData, setP
                 <div>
                     
                     <h1>{postData}</h1>
-                    <h2>Næring: {Næring}</h2>
+                    <h2>Eksterne drivkrefter</h2>
                     
                     
                     <Graph Label = {Label} Values = {Values}/>
@@ -125,7 +125,7 @@ export default function Graphs({ naceKode, appState, setAppState, postData, setP
 
             return(<div>
                 <h1>{postData}</h1>
-                <h2>Næring: {Næring}</h2>
+                <h2>Intern respons</h2>
 
                 <Graph Label = {Label} Values = {Values}/>
                 <div class="buttonscontainer">

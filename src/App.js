@@ -10,6 +10,7 @@ import Baerekraftsliste from "./components/Baerekraftsliste"
 
 import { NaceFunction } from "./components/NaceFunction";
 import OrgNrLookUp from "./components/OrgNrLookUp";
+import Home from "./components/Home";
 
 
 const axios = require('axios');
@@ -107,7 +108,7 @@ function App() {
               <div className="sidebyside1">
              
              
-              <Baerekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
+              <Home bkListeState={bkListeState} setBkListeState={setBkListeState}/>
             
                 </div>
                 <div className="sidebyside2">
