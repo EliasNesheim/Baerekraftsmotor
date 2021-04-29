@@ -36,9 +36,16 @@ export default function Graph( {Label, Values} ) {
                         ticks: {
                             beginAtZero: true
                         }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            fontSize: 40
+                        }
                     }]
                 }
-            }}
+                
+            }
+        }
         />
     </div>
 }
