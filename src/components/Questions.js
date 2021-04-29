@@ -27,7 +27,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                     </div>
                 </div>
             )
-            break;
+            
         case 2:
             setAnswerKey(1);
             return(
@@ -55,7 +55,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                 </div>
                 </div>
             )
-            break;
+            
         case 3:
             setAnswerKey(2);
             return(
@@ -84,7 +84,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                      </div>
                      </div>
             )
-            break;
+            
         case 4:
             setAnswerKey(3);
             return(
@@ -109,7 +109,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                   </div>
                   </div>
             )
-            break;
+            
         case 5:
             setAnswerKey(4);
             return(
@@ -132,7 +132,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                       </div>
                       </div>
             )
-            break;
+            
         case 6:
             setAnswerKey(5);
             return(
@@ -156,7 +156,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                       </div>
                       </div>
             )
-            break;
+            
         case 7:
             setAnswerKey(6);
             return(
@@ -180,7 +180,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                    </div>
                    </div>
             )
-            break;
+            
         case 8:
             setAnswerKey(7);
             return(
@@ -204,7 +204,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                     </div>
                     </div>
             )
-            break;
+            
         case 9:
             setAnswerKey(8);
             return(
@@ -228,7 +228,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                      </div>
                      </div>
             )
-            break;
+            
         case 10:
             setAnswerKey(9);
             return(
@@ -252,7 +252,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                              </div>
                              </div>
             )
-            break;
+            
         case 11:
             setAnswerKey(10);
             return(
@@ -275,7 +275,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                      </div>
                      </div>
             )
-            break;
+            
         case 12:
             setAnswerKey(11);
             return(
@@ -298,10 +298,10 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                       </div>
                       </div>
             )
-            break;
+            
     
         default:
-            break;
+            
     }
 
 }

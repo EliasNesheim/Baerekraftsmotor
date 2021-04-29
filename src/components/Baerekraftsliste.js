@@ -646,7 +646,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
           </div>
           <div class="buttonspace2">
     
-          <BKKnapp plusMinus={true} bkListeState={bkListeState} setBkListeState={setBkListeState} />
+          <BKKnapp set1={true} bkListeState={bkListeState} setBkListeState={setBkListeState} />
     
           </div>
           </div>
