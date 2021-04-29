@@ -17,21 +17,21 @@ export default function Home({bkListeState, setBkListeState} ){ //Defines Home f
                Spørsmålene omhandler din virksomhet på et strategisk nivå og hvordan dere opplever egen bransje i dette avgjørende arbeidet.
             </p> 
           
-          <div>
+          <div className="bkcontainer">
             <div className="Homepagestyling">
 
               <div>
-                <div class="malbeskrivelse">
+                <div className="malbeskrivelse">
                   <h2>FNs Bærekraftsmål og forklaring</h2>
                   <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
                   <Baekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
 
                 </div>
-                  <div class="buttonscontainer">
-                    <div class="buttonspace1">
+                  <div className="buttonscontainermal">
+                    <div className="buttonspace1mal">
                       <BKKnapp plusMinus={false} bkListeState={bkListeState} setBkListeState={setBkListeState} />
                     </div>
-                    <div class="buttonspace2">
+                    <div className="buttonspace2mal">
                       <BKKnapp plusMinus={true} bkListeState={bkListeState} setBkListeState={setBkListeState} />
                     </div>
                   </div>
