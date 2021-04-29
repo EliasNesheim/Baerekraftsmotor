@@ -146,7 +146,7 @@
 
  /* Adds color to the homepage */ 
 .Homepagestyling{
-   padding-bottom: 130px;
+   
    background-color: #F2F2F2;  
   
 /*background-image: url("./Pride.png"); */ 
@@ -167,7 +167,7 @@
   
 /*background-image: url("./Pride.png"); */
 }
-html { overflow-y: scroll;}
+html { overflow-y: scroll;  background-color: #F2F2F2;  }
  /* Colors the background of the website */ 
 
 .p, p{
