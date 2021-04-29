@@ -38,8 +38,11 @@ export default function OrgNrLookUp({ OrgNr, setOrgNr, appState, setAppState, se
     console.log(postData)
     if (postData === "") {
       console.log(postData)
-      return(
-      <input onChange={handleInput} placeholder="skriv org nummeret ditt"/>
+      return(  
+          <div>
+            <p>Legg inn organisasjonnummer til bedriften du svarer på vegne av: </p>
+            <input onChange={handleInput} placeholder="skriv org nummeret ditt"/>
+      </div>
       )
     }
     else {
@@ -47,10 +50,10 @@ export default function OrgNrLookUp({ OrgNr, setOrgNr, appState, setAppState, se
       return(
 
         <div>
+            <p>Legg inn organisasjonnummer til bedriften du svarer på vegne av: </p>
             <input value={OrgNr} onChange={handleInput}/>
             
-            <p>er {postData} riktig selskap?</p>
-            <p> Hvis så trykk videre</p>
+            <p>Dersom {postData} er riktig selskap, trykk på Videre</p>
             <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
             
         </div>

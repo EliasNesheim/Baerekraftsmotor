@@ -105,6 +105,7 @@ function App() {
               >            
               <div className="containers">
               <div className="sidebyside1">
+<<<<<<< Updated upstream
              
              
               <Baerekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
@@ -114,6 +115,11 @@ function App() {
                 <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
 
 
+=======
+              <Home /></div>
+                <div className="sidebyside2">
+                <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
+>>>>>>> Stashed changes
               </div>
           </div> 
             </motion.div>
