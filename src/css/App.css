@@ -46,6 +46,11 @@
   }
 }
 
+.malbeskrivelse{
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
 .malbeskrivelse h2{
   font-size: 20px;
   font-weight: bold;
@@ -53,7 +58,7 @@
 .malbeskrivelse p{
   font-size: 14px;
 }
-.malbeskrivelse h3{
-  font-size: 18px;
+
+.Tittelhovedside div {
   font-weight: bold;
 }
