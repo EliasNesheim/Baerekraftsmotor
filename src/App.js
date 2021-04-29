@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import './css/App.css';
-
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Questions from "./components/Questions"
@@ -106,7 +105,6 @@ function App() {
               >            
               <div className="containers">
               <div className="sidebyside1">
-<<<<<<< Updated upstream
              
              
               <Baerekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
@@ -116,11 +114,6 @@ function App() {
                 <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
 
 
-=======
-              <Home /></div>
-                <div className="sidebyside2">
-                <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
->>>>>>> Stashed changes
               </div>
           </div> 
             </motion.div>
