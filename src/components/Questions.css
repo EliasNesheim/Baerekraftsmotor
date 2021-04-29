@@ -240,6 +240,7 @@ font-size: 20px;
 }
  /* Positions the slider */ 
 .slider{
+   height:16vh;
    width:100%;
    margin-left: 13vh;
    padding-top:5%;
@@ -535,9 +536,7 @@ font-size: 23px;
    font-size: 15px;
    
 }
-.pagetwocss {
-   font-size: 11px;
-}
+
 
 #Logo{
    max-width: 100%;
@@ -561,7 +560,11 @@ button, input
  /* Styling the slider for mobile screens*/ 
 .slider{
    width:100%;
-   margin-left: 20%;
+   margin-left: 9vh;
+
+    
+   
+    
  }
 
 
