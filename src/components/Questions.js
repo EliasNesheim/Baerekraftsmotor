@@ -1,6 +1,5 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./Questions.css";
 import AppStateButton from "./AppStateButton";
 import Question from "./Question";
 import { Row, Col } from "react-bootstrap";
