@@ -10,6 +10,7 @@
     "bootstrap": "^4.6.0",
     "bootstrap-slider": "^11.0.2",
     "chart.js": "^2.9.4",
+    "express": "^4.17.1",
     "framer": "^1.2.25",
     "framer-motion": "^3.9.1",
     "prop-types": "^15.7.2",
@@ -49,5 +50,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliasNesheim/Baerekraftsmotor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EliasNesheim/Baerekraftsmotor/issues"
+  },
+  "homepage": "https://github.com/EliasNesheim/Baerekraftsmotor#readme"
 }

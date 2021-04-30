@@ -15,7 +15,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
             return(
                 <div className="Container">
                     <div className="Question">
-                        <Col>
+                        <Col><div className="width">
                             <Row>
                                 <Question QType={"Skala"} QText={"Hvor stor er risikoen for at ressursene blir knappere i bedriftens leverandørkjede om tre år? "}
                                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -28,6 +28,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                     <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
                                 </Col>
                             </Row>
+                            </div>
                         </Col>
                     </div>
                 </div>
@@ -39,7 +40,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
             return (
                 <div className="Container">
                     <div className="Question">
-                        <Col>
+                        <Col><div className="width">
                             <Row>
                                 <Question QType={"Skala"} QText={"I hvor stor grad vil leverandørene bli utsatt for lovendringer som kan påvirke forsyningene negativt de nærmeste tre årene?  "}
                                     AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -54,6 +55,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                 </Col>
 
                             </Row>
+                            </div>
                             
                         </Col>
                     </div>
@@ -92,7 +94,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
             return(
                 <div className="Container">
                     <div className="Question">
-                        <Col>
+                        <Col><div className="width">
                             <Row>
                                 <Question QType={"Skala"} QText={"I hvor stor grad er bedriftens drift avhengig av fossile eller ikke-gjennvinnbare ressurser?   "}
                                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -105,6 +107,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                     <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
                                 </Col>
                             </Row>
+                            </div>
                         </Col>
                     </div>
                 </div>
@@ -115,7 +118,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
             return(
                 <div className="Container">
                     <div className="Question">
-                        <Col>
+                        <Col><div className="width">
                             <Row>
                                 <Question QType={"Skala"} QText={"I hvor stor grad vil bedriftens drift bli påvirket av kommende lovendringer i forbindelse med det grønne skifte?   "}
                                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -128,6 +131,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                     <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
                                 </Col>
                             </Row>
+                            </div>
                         </Col>
                     </div>
                 </div>
@@ -138,7 +142,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
             return(
                 <div className="Container">
                     <div className="Question">
-                        <Col>
+                        <Col><div className="width">
                             <Row>
                                 <Question QType={"Skala"} QText={"I hvor stor grad vil fremtidens forbrukere sette større krav til bedriftens CSR-profil?   "}
                                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -151,6 +155,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                     <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
                                 </Col>
                             </Row>
+                            </div>
                         </Col>
                     </div>
                 </div>
@@ -161,7 +166,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
             return(
                 <div className="Container">
                     <div className="Question">
-                        <Col>
+                        <Col><div className="width">
                             <Row>
                                 <Question QType={"Skala"} QText={"I hvor stor grad baseres bedriftens produkt eller tjeneste på det som vil bli knappe ressurser om fem år?   "}
                                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -174,6 +179,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                     <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
                                 </Col>
                             </Row>
+                            </div>
                         </Col>
                     </div>
                 </div>
@@ -184,7 +190,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
             return(
                 <div className="Container">
                     <div className="Question">
-                        <Col>
+                        <Col><div className="width">
                             <Row>
                                 <Question QType={"Skala"} QText={"I hvor stor grad vil bedriftens produkt(portefølje) bli preget av lovendringer de kommende fem årene?   "}
                                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -197,6 +203,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                     <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
                                 </Col>
                             </Row>
+                            </div>
                         </Col>
                     </div>
                 </div>
@@ -207,7 +214,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
             return(
                 <div className="Container">
                     <div className="Question">
-                        <Col>
+                        <Col><div className="width">
                             <Row>
                                 <Question QType={"Skala"} QText={"I hvor stor grad vil kundene deres endre krav og forventninger til deres produkt de neste fem årene?   "}
                                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -220,6 +227,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                     <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
                                 </Col>
                             </Row>
+                            </div>
                         </Col>
                     </div>
                 </div>
@@ -230,7 +238,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
             return(
                 <div className="Container">
                     <div className="Question">
-                        <Col>
+                        <Col><div className="width">
                             <Row>
                                 <Question QType={"Skala"} QText={"I hvor stor grad vil ressursene som skaper lønnsomhet kunne påvirke forretningsmodellen til din bedrift?   "}
                                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -243,6 +251,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                     <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
                                 </Col>
                             </Row>
+                            </div>
                         </Col>
                     </div>
                 </div>
@@ -253,7 +262,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
             return(
                 <div className="Container">
                     <div className="Question">
-                        <Col>
+                        <Col><div className="width">
                             <Row>
                                 <Question QType={"Skala"} QText={"I hvor stor grad vil fremtidige lovendringer og reguleringer kunne påvirke verdiskapingen i din bedrift?   "}
                                 AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
@@ -266,6 +275,7 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                                     <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
                                 </Col>
                             </Row>
+                            </div>
                         </Col>
                     </div>
                 </div>
@@ -277,18 +287,20 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                 <div className="Container">
                     <div className="Question">
                         <Col>
-                            <Row>
-                                <Question QType={"Skala"} QText={"I hvor stor grad vil nye behov i kundesegmentene påvirke forretningsmodellen i bedriften?   "}
-                                AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
-                            </Row>
-                            <Row>
-                                <Col>
-                                    <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
-                                </Col>
-                                <Col>
-                                    <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
-                                </Col>
-                            </Row>
+                            <div className="width">
+                                <Row>
+                                    <Question QType={"Skala"} QText={"I hvor stor grad vil nye behov i kundesegmentene påvirke forretningsmodellen i bedriften?   "}
+                                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
+                                </Row>
+                                <Row>
+                                    <Col>
+                                        <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
+                                    </Col>
+                                    <Col>
+                                        <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
+                                    </Col>
+                                </Row>
+                            </div>
                         </Col>
                     </div>
                 </div>
