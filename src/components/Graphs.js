@@ -93,7 +93,7 @@ export default function Graphs({ naceKode, appState, setAppState, postData, setP
             console.log(values);
 
             return(
-                <div>
+                <div className="flex">
                     
                     <h1>{postData}</h1>
                     <h2>Eksterne drivkrefter</h2>

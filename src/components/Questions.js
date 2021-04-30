@@ -66,18 +66,20 @@ export default function Questions({ appState, setAppState, Answers, setAnswers, 
                 <div className="Container">
                     <div className="Question">
                         <Col>
-                            <Row>
-                                <Question QType={"Skala"} QText={"Hvor opptatt vil bedriftens kunder være av bærekraftig verdikjede?   "}
-                                AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
-                            </Row>
-                            <Row>
-                                <Col>
-                                    <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
-                                </Col>
-                                <Col>
-                                    <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
-                                </Col>
-                            </Row>
+                            <div className="width">
+                                <Row>
+                                    <Question QType={"Skala"} QText={"Hvor opptatt vil bedriftens kunder være av bærekraftig verdikjede?"}
+                                    AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} Answers={Answers} setAnswers={setAnswers} appState={appState} />
+                                </Row>
+                                <Row>
+                                    <Col>
+                                        <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
+                                    </Col>
+                                    <Col>
+                                        <AppStateButton plusMinus appState={appState} setAppState={setAppState} />
+                                    </Col>
+                                </Row>
+                            </div>
                         </Col>
                     </div>
                 </div> 

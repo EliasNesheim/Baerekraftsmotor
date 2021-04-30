@@ -33,9 +33,9 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
     if (QType === "Skala") {
         return (
 
-            <div>
+            <div className="width">
                 <Row >
-                    <div className="GreenBorder OneThird">
+                    <div className="GreenBorder OneThird width">
                     <label>{QText}</label>
                     </div>
                 </Row>

@@ -210,7 +210,7 @@ export default function Baekraftsliste({bkListeState, setBkListeState}){
             <BaerekraftsButton plusMinus={false} bkListeState={bkListeState} setBkListeState={setBkListeState} />
             </Col>
             <Col>
-            <Baekraftselement BkMal={BkMal13} text={"Handle umiddelbart for å bekjempe klimaendringene og konsekvensene av dem (Basert på en erkjennelse av at FNs rammekonvensjon om klimaendring er det viktigste internasjonale og mellomstatlige forumet for forhandlinger om globale tiltak mot klimaendringer.)"}/>
+            <Baekraftselement BkMal={BkMal13} text={"Handle umiddelbart for å bekjempe klimaendringene og konsekvensene av dem."}/>
             </Col>
             <Col xs={1}>
             <BaerekraftsButton plusMinus={true} bkListeState={bkListeState} setBkListeState={setBkListeState} />

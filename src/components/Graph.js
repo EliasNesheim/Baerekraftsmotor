@@ -6,13 +6,20 @@ export default function Graph( {Label, Values} ) {
     console.log("graf: " + JSON.stringify(Label))
     console.log("graf: " + Label)
     console.log("graf: " + Values)
+
+    if(window.screen.availWidth < 1200) {
+        var font_size = 12
+    } else {
+        var font_size = 40
+    }
+
     return <div>
         <Bar
             data={{
                 labels: Label,
                 datasets: [
                     {
-                        label: 'Sum of Rows',
+                        label: "utvalg",
                         data: Values,
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
@@ -39,11 +46,10 @@ export default function Graph( {Label, Values} ) {
                     }],
                     xAxes: [{
                         ticks: {
-                            fontSize: 40
+                            fontSize: font_size
                         }
                     }]
-                }
-                
+                },
             }
         }
         />
