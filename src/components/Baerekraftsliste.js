@@ -23,7 +23,7 @@ import Baekraftselement from "./Baerekraftselement";
 import BaerekraftsButton from "./BaerekraftsButton";
 import { Col, Row } from "react-bootstrap";
 
-
+//17 caser for 17 bærekraftsmål
 export default function Baekraftsliste({bkListeState, setBkListeState}){
   switch(bkListeState){ 
     case 1:
