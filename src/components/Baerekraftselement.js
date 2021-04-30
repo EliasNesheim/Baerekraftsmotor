@@ -1,5 +1,5 @@
 import React from "react";
-
+//Bilde og tekst for hver bærekraftsmål
 export default function Baekraftselement({BkMal, text}){
 
     return(

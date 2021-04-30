@@ -23,7 +23,7 @@ import Baekraftselement from "./Baerekraftselement";
 import BaerekraftsButton from "./BaerekraftsButton";
 import { Col, Row } from "react-bootstrap";
 
-
+//En slideshow med alle bærekraftsmål
 export default function Baekraftsliste({bkListeState, setBkListeState}){
   switch(bkListeState){ 
     case 1:
