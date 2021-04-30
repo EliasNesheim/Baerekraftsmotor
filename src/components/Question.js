@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Container, Row, Col } from "react-bootstrap";
+import {  Row, Col } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
 import RangeSlider from 'react-bootstrap-range-slider';
 
@@ -33,35 +33,34 @@ export default function Question({ QType, QText, Answers, setAnswers, AnswerKey,
     if (QType === "Skala") {
         return (
 
-            <div style={{height: "60vh"}}>
+            <div>
                 <Row >
-                    <label style={{height: "20vh"}} >{QText}</label>
+                    <div className="GreenBorder OneThird">
+                    <label>{QText}</label>
+                    </div>
                 </Row>
                 <Row>
-                    <label style={{height: "20vh"}}> 
+                    <Col>
+                    <label className="" > 
                     Skala fra 0 – 10, 0 = Ikke viktig, 10= Helt avgjørende
                     </label> <br />
+                    </Col>
                 </Row>
                 <Row>
-                <Form>
-                    <Form.Group as={Row}>
-                        {// slideren
-                        }
-                        <div className="slider">
-                        <Col xs="7">
-               
+                    
+                        <Col>
+                        <Form.Group>
                             <RangeSlider
                             
                                 value={value}
                                 max={10}
                                 onChange={e => setValue(e.target.value)}
-                                
+                                width="80%"
                             />
-                         
+                            </Form.Group>
                         </Col>
-                        </div>
-                    </Form.Group>
-                </Form>
+                       
+                    
                 </Row>
             </div>
         )

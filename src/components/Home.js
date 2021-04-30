@@ -2,44 +2,56 @@ import React from "react"; //Imports react
 //import "./Pageandhalf.css"; //Imports css
 import 'bootstrap/dist/css/bootstrap.min.css'; //Imports bootstrap css
 import Baekraftsliste from "./Baerekraftsliste";
-import BKKnapp from "./BKKnapp";
+import { Col, Container, Row } from "react-bootstrap";
+import OrgNrLookUp from "./OrgNrLookUp";
 
 
-export default function Home({bkListeState, setBkListeState} ){ //Defines Home function used in App.js
+
+export default function Home({bkListeState, setBkListeState, OrgNr, setOrgNr, appState, setAppState, setNaceKode, postData, setPost} ){ //Defines Home function used in App.js
       //Returns the code to the function Home
     return(
-      <div>
-      
-        <div className="Homepagestyling">
-            <h1 className="Tittelhovedside">Velkommen til Greenovate!</h1> 
-            <p>Greenovate er en bærekraftsmotor som gir virksomheten en felles forståelse av hva bærekraft betyr, hvilke eksterne drivere som påvirker mest og hvor dere konkret kan sette i gang.
-               Verktøyet passer best i workshop-format sammen med Simpact Group, men testen er allikevel gratis slik at flest mulig kan få innsikt i sitt bærekraftpotensial. 
-               Spørsmålene omhandler din virksomhet på et strategisk nivå og hvordan dere opplever egen bransje i dette avgjørende arbeidet.
-            </p> 
-          
-          <div className="bkcontainer">
-            <div className="Homepagestyling">
 
-              <div>
-                <div className="malbeskrivelse">
-                  <h2>FNs Bærekraftsmål og forklaring</h2>
-                  <p>Dette er FNs bærekraftsmål tatt fra <a href="https://www.fn.no/om-fn/fns-baerekraftsmaal">FN's bærekraftside</a></p>
-                  <Baekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
-
-                </div>
-                  <div className="buttonscontainermal">
-                    <div className="buttonspace1mal">
-                      <BKKnapp plusMinus={false} bkListeState={bkListeState} setBkListeState={setBkListeState} />
-                    </div>
-                    <div className="buttonspace2mal">
-                      <BKKnapp plusMinus={true} bkListeState={bkListeState} setBkListeState={setBkListeState} />
-                    </div>
-                  </div>
-              </div>
-            </div>
+      <Container>
+        <Row className="d-flex justify-content-around">
+          <div className="Dark-Jungel-Green-Text">
+            <Col>
+              <h1>Velkommen til Greenovate!</h1> 
+            </Col>
           </div>
-        </div>
-      </div>
+        </Row>
+        <Row >
+          <p>Greenovate er en bærekraftsmotor som gir virksomheten en felles forståelse av hva bærekraft betyr, hvilke eksterne drivere som påvirker mest og hvor dere konkret kan sette i gang.
+              Verktøyet passer best i workshop-format sammen med Simpact Group, men testen er allikevel gratis slik at flest mulig kan få innsikt i sitt bærekraftpotensial. 
+              Spørsmålene omhandler din virksomhet på et strategisk nivå og hvordan dere opplever egen bransje i dette avgjørende arbeidet.
+          </p> 
+        </Row>  
+        <Row >
+          <Col>
+            <div>
+              <h3>FNs Bærekraftsmål og forklaring</h3>
+
+              <Baekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
+
+            </div>
+          </Col>
+          <Col>
+            <Row>
+            <div className="GreenBorder">
+              <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
+              </div>
+            </Row>
+            <Row>
+              <div className="GreenBorder">
+                <p>
+                  Simpact Group er et lite selskap med stor påvirkningskraft. Vår jobb er å hjelpe våre kunder innenfor innovasjon, vekst, forretningsutvikling og omstilling.
+                </p>
+                <p>Vil du lære mer om bærekraftig utvikling? Les mer på denne siden:</p> 
+                <p><a href="https://simpact.no/"> https://simpact.no/</a></p>
+              </div>
+            </Row>
+            </Col>
+          </Row>
+      </Container>
     
         )
 }

@@ -6,10 +6,8 @@ import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Questions from "./components/Questions"
 import Graphs from "./components/Graphs"
-import Baerekraftsliste from "./components/Baerekraftsliste"
 
 import { NaceFunction } from "./components/NaceFunction";
-import OrgNrLookUp from "./components/OrgNrLookUp";
 import Home from "./components/Home";
 
 
@@ -20,12 +18,11 @@ const axios = require('axios');
 function App() {
 
   const [OrgNr, setOrgNr] = useState(null);
-  const [generateRapport, setGenerateRapport] = useState(null);
   const [appState, setAppState] = useState(0);
   const [bkListeState, setBkListeState] = useState(1);
   const [naceKode, setNaceKode] = useState(null);
   const [postData, setPost] = useState("");
-  const [Answers, setAnswers] = useState({[0]:3,[1]:3,});
+  const [Answers, setAnswers] = useState({});
   const [AnswerKey, setAnswerKey] = useState(0);
   const [sessionMs, setSessionMs] = useState(null);
 
@@ -103,20 +100,11 @@ function App() {
               initial={{ y: "-100vh"}}
               animate={{ y: 0}}
               exit={{ y: "-100vh"}}
-              >            
-              <div className="containers">
-              <div className="sidebyside1">
-             
-             
-              <Home bkListeState={bkListeState} setBkListeState={setBkListeState}/>
+              >    
+                <Home bkListeState={bkListeState} setBkListeState={setBkListeState} OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost}/>
             
-                </div>
-                <div className="sidebyside2">
-                <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
-
-
-              </div>
-          </div> 
+                
+             
             </motion.div>
             }
           </AnimatePresence>

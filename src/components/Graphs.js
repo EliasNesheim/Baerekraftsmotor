@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Container, Row, Col } from "react-bootstrap";
-import TilbakeKnapp from "./AppStateButton";
-import { motion } from 'framer-motion';
-import { nace, NaceFunction } from './NaceFunction.js'
-import { render } from "@testing-library/react";
-import BarChart from "./Graph.js";
-import { func } from "prop-types";
+import {  NaceFunction } from './NaceFunction.js'
 import AppStateButton from "./AppStateButton";
 import Graph from "./Graph.js";
 
@@ -106,11 +100,11 @@ export default function Graphs({ naceKode, appState, setAppState, postData, setP
                     
                     
                     <Graph Label = {Label} Values = {Values}/>
-                    <div class="buttonscontainer">
-                        <div class="buttonspace1">
+                    <div class="d-flex justify-content-around">
+                        <div >
                             <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                         </div>
-                        <div class="buttonspace2">
+                        <div >
                             <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                         </div>
                     </div>
@@ -128,11 +122,11 @@ export default function Graphs({ naceKode, appState, setAppState, postData, setP
                 <h2>Intern respons</h2>
 
                 <Graph Label = {Label} Values = {Values}/>
-                <div class="buttonscontainer">
-                        <div class="buttonspace1">
+                <div class="d-flex justify-content-around">
+                        <div>
                             <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                         </div>
-                        <div class="buttonspace2">
+                        <div>
                             <AppStateButton plusMinus={true} appState={appState} setAppState={setAppState} />
                         </div>
                     </div>
@@ -156,8 +150,8 @@ export default function Graphs({ naceKode, appState, setAppState, postData, setP
                 <h2>Næring: {Næring}</h2>
 
                 <Graph Label = {Label} Values = {Values}/>
-                <div class="buttonscontainer">
-                        <div class="buttonspace1">
+                <div class="d-flex justify-content-around">
+                        <div>
                             <AppStateButton plusMinus={false} appState={appState} setAppState={setAppState} />
                         </div>
                 </div>
