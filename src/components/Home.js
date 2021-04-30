@@ -27,7 +27,7 @@ export default function Home({bkListeState, setBkListeState, OrgNr, setOrgNr, ap
         </Row>  
         <Row >
           <Col>
-            <div>
+            <div className="OneThird bm">
               <h3>FNs Bærekraftsmål og forklaring</h3>
 
               <Baekraftsliste bkListeState={bkListeState} setBkListeState={setBkListeState}/>
@@ -39,8 +39,6 @@ export default function Home({bkListeState, setBkListeState, OrgNr, setOrgNr, ap
             <div className="GreenBorder">
               <OrgNrLookUp OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost} />
               </div>
-            </Row>
-            <Row>
               <div className="GreenBorder">
                 <p>
                   Simpact Group er et lite selskap med stor påvirkningskraft. Vår jobb er å hjelpe våre kunder innenfor innovasjon, vekst, forretningsutvikling og omstilling.
