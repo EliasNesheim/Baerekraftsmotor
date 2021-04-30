@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar/Navbar";
 import './css/App.css';
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import Questions from "./components/Questions"
-import Graphs from "./components/Graphs"
+import Questions from "./components/Questions";
+import Graphs from "./components/Graphs";
 
 import { NaceFunction } from "./components/NaceFunction";
 import Home from "./components/Home";
