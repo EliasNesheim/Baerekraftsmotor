@@ -5,7 +5,7 @@ import AppStateButton from "./AppStateButton";
 import Graph from "./Graph.js";
 
 const axios = require('axios');
-const bkk = "https://13.51.89.24/bkk/getNace.php?nace="
+const bkk = "https://13.51.89.24/getNace.php?nace="
 
 export default function Graphs({ naceKode, appState, setAppState, postData, setPost, Answers, sessionMs}){
     
@@ -35,7 +35,7 @@ export default function Graphs({ naceKode, appState, setAppState, postData, setP
     var spm10 = (parseInt(Answers[9]));
     var spm11 = (parseInt(Answers[10]));
     var spm12 = (parseInt(Answers[11]));
-    var url2 = "https://13.51.89.24/bkk/setResultat.php?";
+    var url2 = "https://13.51.89.24/setResultat.php?";
     var url3 = (url2+"sms="+sessionMs+"&spm1="+spm1+"&spm2="+spm2+"&spm3="+spm3+"&spm4="+spm4+"&spm5="+spm5+"&spm6="+spm6+"&spm7="+spm7+"&spm8="+spm8+"&spm9="+spm9+"&spm10="+spm10+"&spm11="+spm11+"&spm12="+spm12);
     
     useEffect(() => {

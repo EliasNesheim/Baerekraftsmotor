@@ -41,7 +41,7 @@ function App() {
           console.log(sessionMs);
         }
         console.log(sessionMs);
-        var url = ("https://13.51.89.24/bkk/setSession.php?");
+        var url = ("https://13.51.89.24/setSession.php?");
         var sms = pfft;
         var bnavn = postData;
         var orgnr = OrgNr;
