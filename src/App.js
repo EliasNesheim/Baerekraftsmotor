@@ -97,9 +97,9 @@ function App() {
           <AnimatePresence>
             {appState === 0 &&
             <motion.div
-              initial={{ y: "-100vh"}}
-              animate={{ y: 0}}
-              exit={{ y: "-100vh"}}
+               initial={{ opacity: 0}}
+               animate={{ opacity: 1}}
+               exit={{ opacity: 0}}
               >    
                 <Home bkListeState={bkListeState} setBkListeState={setBkListeState} OrgNr={OrgNr} setOrgNr={setOrgNr} appState={appState} setAppState={setAppState} setNaceKode={setNaceKode} postData={postData} setPost={setPost}/>
             
@@ -112,10 +112,9 @@ function App() {
             {appState >= 1 && appState<=12 &&
               <motion.div
 
-              initial={{ y: "+100vh"}}
-              animate={{ y: 0}}
-              
-              exit={{ y: "+100vh"}}
+               initial={{ opacity: 0}}
+               animate={{ opacity: 1}}
+               exit={{ opacity: 0}}
               >
               
                 <Questions appState={appState} setAppState={setAppState} Answers={Answers} setAnswers={setAnswers} AnswerKey={AnswerKey} setAnswerKey={setAnswerKey} />
@@ -126,10 +125,9 @@ function App() {
             {appState >= 13 &&
               <motion.div
 
-              initial={{ y: "+100vh"}}
-              animate={{ y: 0}}
-              
-              exit={{ y: "+100vh"}}
+               initial={{ opacity: 0}}
+               animate={{ opacity: 1}}
+               exit={{ opacity: 0}}
               >
                 <Graphs naceKode={naceKode} appState={appState} setAppState={setAppState}  postData={postData} setPost={setPost} Answers={Answers} sessionMs={sessionMs}/>
               </motion.div>
