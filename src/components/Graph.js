@@ -7,11 +7,12 @@ export default function Graph( {Label, Values} ) {
     console.log("graf: " + Label)
     console.log("graf: " + Values)
 
-    if(window.screen.availWidth < 1200) {
-        var font_size = 12
-    } else {
-        var font_size = 40
-    }
+
+    var font_size = 40
+
+    if(window.screen.availWidth < 1200) font_size = 12
+    if(window.screen.availWidth < 800) font_size = 8
+    
 
     return <div>
         <Bar

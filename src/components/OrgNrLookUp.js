@@ -40,8 +40,10 @@ export default function OrgNrLookUp({ OrgNr, setOrgNr, appState, setAppState, se
       console.log(postData)
       return(  
           <div>
-            <p>Legg inn organisasjonnummer til bedriften du svarer på vegne av: </p>
-            <input onChange={handleInput} placeholder="skriv org nummeret ditt"/>
+            <form onChange={handleInput}>
+              <p>Legg inn organisasjonnummer til bedriften du svarer på vegne av: </p>
+              <input onChange={handleInput} placeholder="skriv org nummeret ditt"/>
+            </form>
       </div>
       )
     }

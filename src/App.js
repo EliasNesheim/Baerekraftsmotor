@@ -41,7 +41,7 @@ function App() {
           console.log(sessionMs);
         }
         console.log(sessionMs);
-        var url = ("http://13.51.89.24/bkk/setSession.php?");
+        var url = ("https://13.51.89.24/bkk/setSession.php?");
         var sms = pfft;
         var bnavn = postData;
         var orgnr = OrgNr;
@@ -64,16 +64,8 @@ function App() {
     }, [appState]
     
 );
-  const percentage = 100
-
-  
-
-
 
   return (
-    
-
-    
     <div className="App">
 
       <BrowserRouter>
